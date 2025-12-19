@@ -1,9 +1,10 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
-[submodule "themes/yinyang"]
-	path = themes/yinyang
-	url = https://github.com/inxeoz/hugo-theme-yinyang.git
+
 [submodule "content/posts"]
 	path = content/posts
 	url = https://github.com/inxeoz/posts.git
+[submodule "themes/yinyang"]
+	path = themes/yinyang
+	url = https://github.com/inxeoz/hugo-theme-yinyang.git
