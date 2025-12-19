@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/setup/</link>
+    <description>Recent content in Setup on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Frappe Containers</title>
+      <link>http://localhost:1313/posts/docker/setup_frappe_containers/</link>
+      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker/setup_frappe_containers/</guid>
+      <description>&lt;p&gt;docker run -d&#xA;&amp;ndash;name mariadb&#xA;&amp;ndash;network frappe-net&#xA;-e MYSQL_ROOT_PASSWORD=frappe&#xA;-e MYSQL_USER=frappe&#xA;-e MYSQL_PASSWORD=frappe&#xA;-e MYSQL_DATABASE=frappe&#xA;-v mariadb_data:/var/lib/mysql&#xA;-p 3307:3306&#xA;mariadb:10.6&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-cache &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 13000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-queue &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 11000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-socketio &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 12000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

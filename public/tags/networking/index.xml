@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/networking/</link>
+    <description>Recent content in Networking on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Dec 2025 18:13:33 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dnstest</title>
+      <link>http://localhost:1313/posts/networking/dnstest/</link>
+      <pubDate>Wed, 10 Dec 2025 18:13:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/networking/dnstest/</guid>
+      <description>&lt;h1 id=&#34;setting-up-local-test-dns-resolution-without-breaking-system-dns&#34;&gt;Setting Up Local *.test DNS Resolution Without Breaking System DNS&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When developing with Frappe Manager, sites are typically created with domains ending in &lt;code&gt;.test&lt;/code&gt; (e.g., &lt;code&gt;demo.test&lt;/code&gt;). To access these locally, you need DNS resolution for &lt;code&gt;*.test&lt;/code&gt; domains to point to &lt;code&gt;127.0.0.1&lt;/code&gt;. However, this should not interfere with your system&amp;rsquo;s existing DNS setup, especially if you&amp;rsquo;re using VPNs like Cloudflare Warp that manage DNS.&lt;/p&gt;&#xA;&lt;p&gt;This guide shows how to configure local DNS for &lt;code&gt;*.test&lt;/code&gt; domains using &lt;code&gt;dnsmasq&lt;/code&gt;, while forwarding all other queries to your system&amp;rsquo;s upstream DNS (e.g., Warp&amp;rsquo;s servers).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare Tunnel</title>
+      <link>http://localhost:1313/posts/networking/cloudflare_tunnel/</link>
+      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/networking/cloudflare_tunnel/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-tunnel-setup-guide&#34;&gt;Cloudflare Tunnel Setup Guide&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1-what-is-cloudflare-tunnel&#34;&gt;Step 1: What Is Cloudflare Tunnel?&lt;/h2&gt;&#xA;&lt;p&gt;Cloudflare Tunnel is a secure, outbound-only connection from your device to Cloudflare’s global network.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-you-do-not-need&#34;&gt;✔ You DO NOT need:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Port forwarding&lt;/li&gt;&#xA;&lt;li&gt;Public IP&lt;/li&gt;&#xA;&lt;li&gt;Router changes&lt;/li&gt;&#xA;&lt;li&gt;Firewall modifications&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-you-get&#34;&gt;✔ You get:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Encrypted traffic&lt;/li&gt;&#xA;&lt;li&gt;Zero-trust access&lt;/li&gt;&#xA;&lt;li&gt;DDoS protection&lt;/li&gt;&#xA;&lt;li&gt;Global load balancing&lt;/li&gt;&#xA;&lt;li&gt;High availability (multiple connectors)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Cloudflared (the client) creates a secure connection from your machine to Cloudflare’s edge, then Cloudflare routes outside traffic to your local application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker Network</title>
+      <link>http://localhost:1313/posts/docker/docker_network/</link>
+      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_network/</guid>
+      <description>&lt;h1 id=&#34;how-to-create-and-manage-docker-networks&#34;&gt;How to Create and Manage Docker Networks&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-is-a-docker-network&#34;&gt;🔹 What Is a Docker Network?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Docker network&lt;/strong&gt; is a virtual layer that connects containers. By default, Docker provides some basic network types:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Network Type&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;bridge&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Default network for standalone containers. Containers can talk to each other by name on the same bridge.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;host&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Shares the host machine’s network directly (no isolation).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;none&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Disables networking for the container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;overlay&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Enables communication between containers across multiple Docker hosts (used in Swarm mode).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;macvlan&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Assigns a MAC address to containers, making them appear as physical devices on your LAN.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-1-check-existing-docker-networks&#34;&gt;⚙️ Step 1: Check Existing Docker Networks&lt;/h2&gt;&#xA;&lt;p&gt;Before creating one, you can see what’s already available:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KVM and Hosting</title>
+      <link>http://localhost:1313/posts/virtualization/kvm_hosting_registry/</link>
+      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/virtualization/kvm_hosting_registry/</guid>
+      <description>&lt;h1 id=&#34;-working-with-kvm-virtual-machines-and-creating-networks-nat-isolated-bridged--hosting-a-local-repository-server&#34;&gt;🧾 &lt;strong&gt;Working with KVM Virtual Machines and Creating Networks (NAT, Isolated, Bridged) + Hosting a Local Repository Server&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;KVM (Kernel-based Virtual Machine) combined with &lt;code&gt;libvirt&lt;/code&gt; and &lt;code&gt;virt-manager&lt;/code&gt; provides a powerful and flexible virtualization platform for Linux users. One of the most important aspects of virtualization is &lt;strong&gt;networking&lt;/strong&gt; — giving VMs internet, isolating them, or letting them behave like physical machines on your LAN.&lt;/p&gt;&#xA;&lt;p&gt;This article explains:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;How KVM networking works&lt;/li&gt;&#xA;&lt;li&gt;How to create different network types&lt;/li&gt;&#xA;&lt;li&gt;How to connect VMs to them&lt;/li&gt;&#xA;&lt;li&gt;How to host a local repository server and register VMs with it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;1-understanding-kvmlibvirt-networking&#34;&gt;&lt;strong&gt;1. Understanding KVM/libvirt Networking&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;KVM uses &lt;strong&gt;libvirt&lt;/strong&gt; to create and manage software-defined networks. These show up as virtual bridges (e.g., &lt;code&gt;virbr0&lt;/code&gt;, &lt;code&gt;virbr1&lt;/code&gt;, &lt;code&gt;virbr3&lt;/code&gt;).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudflare on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/cloudflare/</link>
+    <description>Recent content in Cloudflare on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Dec 2025 14:30:38 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare Tunnel</title>
+      <link>http://localhost:1313/posts/networking/cloudflare_tunnel/</link>
+      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/networking/cloudflare_tunnel/</guid>
+      <description>&lt;h1 id=&#34;cloudflare-tunnel-setup-guide&#34;&gt;Cloudflare Tunnel Setup Guide&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1-what-is-cloudflare-tunnel&#34;&gt;Step 1: What Is Cloudflare Tunnel?&lt;/h2&gt;&#xA;&lt;p&gt;Cloudflare Tunnel is a secure, outbound-only connection from your device to Cloudflare’s global network.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-you-do-not-need&#34;&gt;✔ You DO NOT need:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Port forwarding&lt;/li&gt;&#xA;&lt;li&gt;Public IP&lt;/li&gt;&#xA;&lt;li&gt;Router changes&lt;/li&gt;&#xA;&lt;li&gt;Firewall modifications&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-you-get&#34;&gt;✔ You get:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Encrypted traffic&lt;/li&gt;&#xA;&lt;li&gt;Zero-trust access&lt;/li&gt;&#xA;&lt;li&gt;DDoS protection&lt;/li&gt;&#xA;&lt;li&gt;Global load balancing&lt;/li&gt;&#xA;&lt;li&gt;High availability (multiple connectors)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Cloudflared (the client) creates a secure connection from your machine to Cloudflare’s edge, then Cloudflare routes outside traffic to your local application.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

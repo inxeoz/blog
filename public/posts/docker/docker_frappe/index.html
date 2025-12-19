@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.152.2">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="http://localhost:1313/posts/docker/docker_frappe/" />
+  <link rel="canonical" href="http://localhost:1313/posts/docker/docker_frappe/" /><link
+    rel="alternate"
+    type="application/atom+xml"
+    href="http://localhost:1313/index.xml"
+    title="blog and posts from inxeoz"
+  />
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http:\/\/localhost:1313\/"
+      },
+      "articleSection" : "posts",
+      "name" : "Docker Frappe",
+      "headline" : "Docker Frappe",
+      "description" : "Frappe Docker troubleshooting and backup strategies",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2025",
+      "datePublished": "2025-11-20 16:01:16 \u002b0000 UTC",
+      "dateModified" : "2025-11-20 16:01:16 \u002b0000 UTC",
+      "url" : "http:\/\/localhost:1313\/posts\/docker\/docker_frappe\/",
+      "keywords" : [ "docker","frappe","troubleshooting","backup", ]
+  }
+</script>
+<title>Docker Frappe</title>
+  <meta property="og:title" content="Docker Frappe" />
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:description"
+    content="Frappe Docker troubleshooting and backup strategies"
+  />
+  <meta
+    name="description"
+    content="Frappe Docker troubleshooting and backup strategies"
+  />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
+  
+  
+  <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:#000;text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:6px}.post-content .post-gallery{display:flex;flex-wrap:wrap;gap:6px}.post-content .post-gallery img{margin-right:auto;margin-top:auto;width:calc(50% - 3px)}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}.post-content .post-gallery img{width:100%}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+  
+  
+  <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="blog and posts from inxeoz">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade"
+    rel="stylesheet"
+  />
+  
+  
+
+  
+  
+</head>
+
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="header-title">
+    <a href="/"
+      >Inxeoz</a
+    >
+  </div>
+  <div class="header-subtitle"></div>
+</header>
+<div class="row end-md header-items">
+  
+  <div class="header-item">
+    <a href="https://inxeoz.com" target="_blank">About Me</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="https://github.com/inxeoz" target="_blank">GitHub</a>
+  </div>
+  
+</div>
+<div class="row">
+   
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Docker Frappe</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2025-11-20 16:01:16 UTC">
+                20 Nov 2025
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h1 id="fixing-common-frappe-docker-errors-backing-up-and-restoring-databases">Fixing Common Frappe Docker Errors, Backing Up, and Restoring Databases</h1>
+<h2 id="-introduction">🧠 Introduction</h2>
+<p>Running <strong>Frappe</strong> or <strong>ERPNext</strong> in Docker simplifies deployment, but real-world use often brings challenges — like missing CSS, password mismatches, and restoring backups correctly.</p>
+<p>This guide explains how to:</p>
+<ul>
+<li>Back up your <strong>database and site files</strong></li>
+<li>Restore a full Frappe instance on a fresh Docker setup</li>
+<li>Fix <strong>common Frappe Docker errors</strong></li>
+<li>Solve the notorious <strong>“CSS not loading”</strong> issue after restore</li>
+</ul>
+<p>Tested on <strong>Arch Linux (Manjaro i3)</strong> using <strong>Frappe/ERPNext v15</strong>.</p>
+<hr>
+<h2 id="-1-frappe-docker-overview">🐳 1. Frappe Docker Overview</h2>
+<p>A typical <code>frappe_docker</code> setup runs these containers:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Container</th>
+          <th>Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>frappe_docker-frontend-1</code></td>
+          <td>Nginx web server (serves frontend assets)</td>
+      </tr>
+      <tr>
+          <td><code>frappe_docker-backend-1</code></td>
+          <td>Bench and Python app server</td>
+      </tr>
+      <tr>
+          <td><code>frappe_docker-db-1</code></td>
+          <td>MariaDB database</td>
+      </tr>
+      <tr>
+          <td><code>frappe_docker-redis-*</code></td>
+          <td>Redis for cache, queue, socketio</td>
+      </tr>
+      <tr>
+          <td><code>frappe_docker-scheduler-1</code></td>
+          <td>Scheduled background jobs</td>
+      </tr>
+      <tr>
+          <td><code>frappe_docker-queue-*</code></td>
+          <td>Workers handling background tasks</td>
+      </tr>
+  </tbody>
+</table>
+<p>Each container is isolated — site data, database, and static files live in different volumes.</p>
+<hr>
+<h2 id="-2-backing-up-frappe--erpnext-data">💾 2. Backing Up Frappe / ERPNext Data</h2>
+<p>A complete backup includes two parts:</p>
+<ol>
+<li><strong>Database Dump (.sql)</strong></li>
+<li><strong>Site Files (site folder with public/private/uploads)</strong></li>
+</ol>
+<hr>
+<h3 id="-step-1--find-your-database-info">🔍 Step 1 — Find Your Database Info</h3>
+<p>Run inside the backend container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 cat /home/frappe/frappe-bench/sites/frontend/site_config.json
+</span></span></code></pre></div><p>You’ll see something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;db_name&#34;</span>: <span style="color:#e6db74">&#34;_5e5899d8398b5f7b&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;db_password&#34;</span>: <span style="color:#e6db74">&#34;8F9NalSR2to37McZ&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;db_type&#34;</span>: <span style="color:#e6db74">&#34;mariadb&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h3 id="-step-2--backup-the-database">💾 Step 2 — Backup the Database</h3>
+<p>Run on your <strong>host</strong>, not inside a container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -i frappe_docker-db-1 mysqldump -u _5e5899d8398b5f7b -p<span style="color:#e6db74">&#39;8F9NalSR2to37McZ&#39;</span> _5e5899d8398b5f7b &gt; frappe_db_backup.sql
+</span></span></code></pre></div><p>✅ Creates <code>frappe_db_backup.sql</code> on your host.</p>
+<hr>
+<h3 id="-step-3--backup-site-files">🗂 Step 3 — Backup Site Files</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -t frappe_docker-backend-1 tar czf - -C /home/frappe/frappe-bench sites &gt; frappe_sites_backup.tar.gz
+</span></span></code></pre></div><p>✅ This saves your entire <code>sites/</code> directory (public, private, and configs).</p>
+<hr>
+<h3 id="-step-4--organize-backups">🗓 Step 4 — Organize Backups</h3>
+<p>Keep things clean and dated:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p backups/<span style="color:#66d9ef">$(</span>date +%F<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>mv frappe_db_backup.sql frappe_sites_backup.tar.gz backups/<span style="color:#66d9ef">$(</span>date +%F<span style="color:#66d9ef">)</span>/
+</span></span></code></pre></div><hr>
+<h2 id="-3-restoring-a-backup-to-a-fresh-instance">🔁 3. Restoring a Backup to a Fresh Instance</h2>
+<h3 id="step-1--remove-old-setup">Step 1 — Remove Old Setup</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker stop <span style="color:#66d9ef">$(</span>docker ps -aq --filter <span style="color:#e6db74">&#34;name=frappe_docker-&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>docker rm <span style="color:#66d9ef">$(</span>docker ps -aq --filter <span style="color:#e6db74">&#34;name=frappe_docker-&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>docker volume rm <span style="color:#66d9ef">$(</span>docker volume ls -q --filter <span style="color:#e6db74">&#34;name=frappe_docker&#34;</span><span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><hr>
+<h3 id="step-2--recreate-the-stack">Step 2 — Recreate the Stack</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/frappe/frappe_docker.git
+</span></span><span style="display:flex;"><span>cd frappe_docker
+</span></span><span style="display:flex;"><span>docker compose -f compose.yaml -f overrides/compose.erpnext.yaml up -d
+</span></span></code></pre></div><hr>
+<h3 id="step-3--restore-database">Step 3 — Restore Database</h3>
+<p>Copy your SQL backup into the DB container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker cp frappe_db_backup.sql frappe_docker-db-1:/root/
+</span></span></code></pre></div><p>Access the DB container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-db-1 bash
+</span></span></code></pre></div><p>Inside MariaDB:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u root -p
+</span></span></code></pre></div><p>Then:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> _5e5899d8398b5f7b;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> _5e5899d8398b5f7b.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;_5e5899d8398b5f7b&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;8F9NalSR2to37McZ&#39;</span>;
+</span></span><span style="display:flex;"><span>FLUSH <span style="color:#66d9ef">PRIVILEGES</span>;
+</span></span><span style="display:flex;"><span>EXIT;
+</span></span></code></pre></div><p>Now import:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -u _5e5899d8398b5f7b -p<span style="color:#e6db74">&#39;8F9NalSR2to37McZ&#39;</span> _5e5899d8398b5f7b &lt; /root/frappe_db_backup.sql
+</span></span><span style="display:flex;"><span>exit
+</span></span></code></pre></div><hr>
+<h3 id="step-4--restore-site-files">Step 4 — Restore Site Files</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker cp frappe_sites_backup.tar.gz frappe_docker-backend-1:/home/frappe/
+</span></span><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bash
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench
+</span></span><span style="display:flex;"><span>tar -xzf /home/frappe/frappe_sites_backup.tar.gz
+</span></span><span style="display:flex;"><span>exit
+</span></span></code></pre></div><hr>
+<h3 id="step-5--sync-passwords">Step 5 — Sync Passwords</h3>
+<p>If <code>db_password</code> mismatches:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-db-1 mysql -u root -p
+</span></span></code></pre></div><p>Then:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;_5e5899d8398b5f7b&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;k8INrBbWUX3RrGNB&#39;</span>;
+</span></span><span style="display:flex;"><span>FLUSH <span style="color:#66d9ef">PRIVILEGES</span>;
+</span></span><span style="display:flex;"><span>EXIT;
+</span></span></code></pre></div><hr>
+<h3 id="step-6--migrate-and-rebuild">Step 6 — Migrate and Rebuild</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bash
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench
+</span></span><span style="display:flex;"><span>bench --site frontend migrate
+</span></span><span style="display:flex;"><span>bench build
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>docker compose restart
+</span></span></code></pre></div><hr>
+<h2 id="-4-fix-css-or-js-not-loading-after-restore">🎨 4. Fix: CSS or JS Not Loading After Restore</h2>
+<p><strong>Symptom:</strong>
+ERPNext loads as plain text with no CSS or theme — “unstyled” page.</p>
+<p><strong>Root Causes:</strong></p>
+<ul>
+<li>Missing or outdated assets in <code>/sites/assets/</code></li>
+<li>Version mismatch between your site and current image</li>
+<li>Nginx serving cached or broken links</li>
+</ul>
+<hr>
+<h3 id="-solution-1--rebuild-assets">✅ Solution 1 — Rebuild Assets</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bash
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench
+</span></span><span style="display:flex;"><span>bench build
+</span></span><span style="display:flex;"><span>bench clear-cache
+</span></span><span style="display:flex;"><span>bench clear-website-cache
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>docker restart frappe_docker-frontend-1
+</span></span></code></pre></div><hr>
+<h3 id="-solution-2--delete-old-assets-and-rebuild">✅ Solution 2 — Delete Old Assets and Rebuild</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bash
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench/sites
+</span></span><span style="display:flex;"><span>rm -rf assets
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench
+</span></span><span style="display:flex;"><span>bench build
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>docker restart frappe_docker-frontend-1
+</span></span></code></pre></div><hr>
+<h3 id="-solution-3--clear-browser--nginx-cache">✅ Solution 3 — Clear Browser + Nginx Cache</h3>
+<ol>
+<li>
+<p>In your browser → <strong>DevTools → Network → Disable cache</strong></p>
+</li>
+<li>
+<p>Hard-refresh (<code>Ctrl+Shift+R</code> or <code>Cmd+Shift+R</code>)</p>
+</li>
+<li>
+<p>Restart containers again if necessary:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose restart
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h3 id="-solution-4--version-sync-fix-advanced">✅ Solution 4 — Version Sync Fix (Advanced)</h3>
+<p>If you restored a site from a different ERPNext/Frappe version, you may need to rebuild the assets with matching code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bash
+</span></span><span style="display:flex;"><span>cd /home/frappe/frappe-bench
+</span></span><span style="display:flex;"><span>bench setup requirements
+</span></span><span style="display:flex;"><span>bench build
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>docker restart frappe_docker-frontend-1
+</span></span></code></pre></div><hr>
+<h3 id="-solution-5--check-assets-path-in-nginx">✅ Solution 5 — Check Assets Path in Nginx</h3>
+<p>Inside the frontend container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-frontend-1 cat /etc/nginx/conf.d/default.conf | grep assets
+</span></span></code></pre></div><p>Ensure it points to <code>/usr/share/nginx/html/assets</code> or the correct mounted site assets volume.</p>
+<hr>
+<h2 id="-5-common-frappe-docker-errors--fixes">⚙️ 5. Common Frappe Docker Errors &amp; Fixes</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Problem</th>
+          <th>Cause</th>
+          <th>Fix</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Access denied for user</strong></td>
+          <td>DB password mismatch</td>
+          <td>Update <code>site_config.json</code> or run <code>ALTER USER</code></td>
+      </tr>
+      <tr>
+          <td><strong>Redis connection refused</strong></td>
+          <td>Redis container not ready</td>
+          <td><code>docker restart frappe_docker-redis-*</code></td>
+      </tr>
+      <tr>
+          <td><strong>Bench commands restricted</strong></td>
+          <td>Production mode</td>
+          <td>Use <code>docker exec -it frappe_docker-backend-1 bash</code></td>
+      </tr>
+      <tr>
+          <td><strong>Missing site error</strong></td>
+          <td>Site folder not restored</td>
+          <td>Copy site folder into <code>/home/frappe/frappe-bench/sites</code></td>
+      </tr>
+      <tr>
+          <td><strong>No CSS / unstyled site</strong></td>
+          <td>Broken assets</td>
+          <td>Run <code>bench build</code> and restart Nginx</td>
+      </tr>
+      <tr>
+          <td><strong>Port 8080 already in use</strong></td>
+          <td>Conflict with another app</td>
+          <td>Change port mapping in compose file</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-6-verify-the-restore">🔍 6. Verify the Restore</h2>
+<ol>
+<li>
+<p>Open <a href="http://localhost:8080">http://localhost:8080</a></p>
+</li>
+<li>
+<p>Log in with your old credentials</p>
+</li>
+<li>
+<p>Run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 bench doctor
+</span></span></code></pre></div><p>Ensure all services are <strong>green (OK)</strong>.</p>
+</li>
+</ol>
+<hr>
+<h2 id="-7-cleanup">🧹 7. Cleanup</h2>
+<p>Once restored successfully:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it frappe_docker-db-1 rm /root/frappe_db_backup.sql
+</span></span><span style="display:flex;"><span>docker exec -it frappe_docker-backend-1 rm /home/frappe/frappe_sites_backup.tar.gz
+</span></span></code></pre></div><hr>
+<h2 id="-8-summary">🧠 8. Summary</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Task</th>
+          <th>Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Backup DB</td>
+          <td><code>docker exec -i frappe_docker-db-1 mysqldump ... &gt; backup.sql</code></td>
+      </tr>
+      <tr>
+          <td>Backup Site</td>
+          <td><code>docker exec -t frappe_docker-backend-1 tar czf ... &gt; sites.tar.gz</code></td>
+      </tr>
+      <tr>
+          <td>Restore DB</td>
+          <td><code>mysql -u user -p'pass' db &lt; backup.sql</code></td>
+      </tr>
+      <tr>
+          <td>Restore Files</td>
+          <td><code>tar -xzf sites.tar.gz -C /home/frappe/frappe-bench</code></td>
+      </tr>
+      <tr>
+          <td>Fix CSS</td>
+          <td><code>bench build &amp;&amp; docker restart frappe_docker-frontend-1</code></td>
+      </tr>
+      <tr>
+          <td>Verify</td>
+          <td><code>bench doctor</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<hr>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/docker/">
+                docker
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/frappe/">
+                frappe
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/troubleshooting/">
+                troubleshooting
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/backup/">
+                backup
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/database/redis_setup/">Redis Setup</a></li>
+    
+    <li><a href="/posts/docker/setup_frappe_containers/">Setup Frappe Containers</a></li>
+    
+    <li><a href="/posts/docker/docker-container/">Docker Container</a></li>
+    
+  </ul>
+</div>
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
+
+        <div class="site-footer">
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const disqus = document.getElementById('disqus_thread');
+    if (!disqus) {
+      return;
+    }
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        const iframes = disqus.getElementsByTagName('iframe');
+        if (iframes.length > 1) {
+          const commentsIframe = iframes[1];
+          while (disqus.firstChild) {
+            disqus.removeChild(disqus.firstChild);
+          }
+          disqus.appendChild(commentsIframe);
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(disqus, { childList: true, subtree: true });
+  });
+</script>
+
+  
+
+</body>
+
+</html>

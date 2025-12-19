@@ -1,0 +1,16 @@
+baseURL = 'https://blog.inxeoz.com/'
+languageCode = 'en-us'
+title = 'blog and posts from inxeoz'
+theme = "yinyang"
+
+[params]
+headTitle = "Inxeoz"
+mainSections = ["posts"]
+
+[[params.socials]]
+name = "About Me"
+link = "https://inxeoz.com"
+
+[[params.socials]]
+name = "GitHub"
+link = "https://github.com/inxeoz"
