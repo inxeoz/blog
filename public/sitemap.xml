@@ -2,156 +2,156 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.inxeoz.com/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dns/</loc>
+    <loc>https://blog.inxeoz.com/tags/dns/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/networking/dnstest/</loc>
+    <loc>https://blog.inxeoz.com/posts/networking/dnstest/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/networking/</loc>
+    <loc>https://blog.inxeoz.com/tags/networking/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.inxeoz.com/posts/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/systemd/</loc>
+    <loc>https://blog.inxeoz.com/tags/systemd/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.inxeoz.com/tags/</loc>
     <lastmod>2025-12-10T18:13:33+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/networking/wilddomain/</loc>
+    <loc>https://blog.inxeoz.com/posts/networking/wilddomain/</loc>
     <lastmod>2025-12-09T20:27:27+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/archlinux/</loc>
+    <loc>https://blog.inxeoz.com/tags/archlinux/</loc>
     <lastmod>2025-11-27T14:35:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/redis_in_arch/redis/</loc>
+    <loc>https://blog.inxeoz.com/posts/redis_in_arch/redis/</loc>
     <lastmod>2025-11-27T14:35:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/redis/</loc>
+    <loc>https://blog.inxeoz.com/tags/redis/</loc>
     <lastmod>2025-11-27T14:35:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/valkey/</loc>
+    <loc>https://blog.inxeoz.com/tags/valkey/</loc>
     <lastmod>2025-11-27T14:35:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/android/</loc>
+    <loc>https://blog.inxeoz.com/tags/android/</loc>
     <lastmod>2025-11-22T14:33:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mobile/</loc>
+    <loc>https://blog.inxeoz.com/tags/mobile/</loc>
     <lastmod>2025-11-22T14:33:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/react-native/react-native/</loc>
+    <loc>https://blog.inxeoz.com/posts/react-native/react-native/</loc>
     <lastmod>2025-11-22T14:33:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/react-native/</loc>
+    <loc>https://blog.inxeoz.com/tags/react-native/</loc>
     <lastmod>2025-11-22T14:33:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/backup/</loc>
+    <loc>https://blog.inxeoz.com/tags/backup/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cloudflare/</loc>
+    <loc>https://blog.inxeoz.com/tags/cloudflare/</loc>
     <lastmod>2025-12-02T14:30:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/networking/cloudflare_tunnel/</loc>
+    <loc>https://blog.inxeoz.com/posts/networking/cloudflare_tunnel/</loc>
     <lastmod>2025-12-02T14:30:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/configuration/</loc>
+    <loc>https://blog.inxeoz.com/tags/configuration/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/containers/</loc>
+    <loc>https://blog.inxeoz.com/tags/containers/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/database/</loc>
+    <loc>https://blog.inxeoz.com/tags/database/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://blog.inxeoz.com/tags/docker/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/docker-container/</loc>
+    <loc>https://blog.inxeoz.com/posts/docker/docker-container/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/docker_frappe/</loc>
+    <loc>https://blog.inxeoz.com/posts/docker/docker_frappe/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/docker_network/</loc>
+    <loc>https://blog.inxeoz.com/posts/docker/docker_network/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/docker_self/</loc>
+    <loc>https://blog.inxeoz.com/posts/docker/docker_self/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/database/fix_redis_in_common_site/</loc>
+    <loc>https://blog.inxeoz.com/posts/database/fix_redis_in_common_site/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/frappe/</loc>
+    <loc>https://blog.inxeoz.com/tags/frappe/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/frappe/how_to_restore/</loc>
+    <loc>https://blog.inxeoz.com/posts/frappe/how_to_restore/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/kvm/</loc>
+    <loc>https://blog.inxeoz.com/tags/kvm/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/virtualization/kvm_hosting_registry/</loc>
+    <loc>https://blog.inxeoz.com/posts/virtualization/kvm_hosting_registry/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python/learn-python-by-projects/</loc>
+    <loc>https://blog.inxeoz.com/posts/python/learn-python-by-projects/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/learning/</loc>
+    <loc>https://blog.inxeoz.com/tags/learning/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/management/</loc>
+    <loc>https://blog.inxeoz.com/tags/management/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mariadb/</loc>
+    <loc>https://blog.inxeoz.com/tags/mariadb/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/persistence/</loc>
+    <loc>https://blog.inxeoz.com/tags/persistence/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/projects/</loc>
+    <loc>https://blog.inxeoz.com/tags/projects/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://blog.inxeoz.com/tags/python/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/database/redis_setup/</loc>
+    <loc>https://blog.inxeoz.com/posts/database/redis_setup/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/restoration/</loc>
+    <loc>https://blog.inxeoz.com/tags/restoration/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/setup/</loc>
+    <loc>https://blog.inxeoz.com/tags/setup/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/setup_frappe_containers/</loc>
+    <loc>https://blog.inxeoz.com/posts/docker/setup_frappe_containers/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/database/start_mariadb/</loc>
+    <loc>https://blog.inxeoz.com/posts/database/start_mariadb/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/system/</loc>
+    <loc>https://blog.inxeoz.com/tags/system/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/troubleshooting/</loc>
+    <loc>https://blog.inxeoz.com/tags/troubleshooting/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tunnel/</loc>
+    <loc>https://blog.inxeoz.com/tags/tunnel/</loc>
     <lastmod>2025-12-02T14:30:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/virtualization/virtual_machine_archlinux/</loc>
+    <loc>https://blog.inxeoz.com/posts/virtualization/virtual_machine_archlinux/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/virtualization/</loc>
+    <loc>https://blog.inxeoz.com/tags/virtualization/</loc>
     <lastmod>2025-11-20T16:01:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/frappe/install_frappe/</loc>
+    <loc>https://blog.inxeoz.com/posts/frappe/install_frappe/</loc>
     <lastmod>2025-11-25T07:18:46+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.inxeoz.com/categories/</loc>
   </url>
 </urlset>

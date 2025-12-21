@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Persistence on blog and posts from inxeoz</title>
-    <link>http://localhost:1313/tags/persistence/</link>
+    <link>https://blog.inxeoz.com/tags/persistence/</link>
     <description>Recent content in Persistence on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/persistence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.inxeoz.com/tags/persistence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Container</title>
-      <link>http://localhost:1313/posts/docker/docker-container/</link>
+      <link>https://blog.inxeoz.com/posts/docker/docker-container/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker-container/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/docker-container/</guid>
       <description>&lt;h1 id=&#34;managing-docker-containers-like-a-pro&#34;&gt;Managing Docker Containers Like a Pro&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-what-is-a-docker-container&#34;&gt;⚙️ 1. What is a Docker Container?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;container&lt;/strong&gt; is a running instance of a &lt;strong&gt;Docker image&lt;/strong&gt; — a lightweight, isolated environment that can hold your software, tools, and files.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Image&lt;/strong&gt; = the blueprint (a frozen snapshot, like an OS or preconfigured setup)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt; = the living instance of that image&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When you stop or delete a container, your data and changes can vanish — unless you know how to make them persistent.&lt;/p&gt;</description>
     </item>
   </channel>

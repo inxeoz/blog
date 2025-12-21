@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Systemd on blog and posts from inxeoz</title>
-    <link>http://localhost:1313/tags/systemd/</link>
+    <link>https://blog.inxeoz.com/tags/systemd/</link>
     <description>Recent content in Systemd on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Dec 2025 18:13:33 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.inxeoz.com/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dnstest</title>
-      <link>http://localhost:1313/posts/networking/dnstest/</link>
+      <link>https://blog.inxeoz.com/posts/networking/dnstest/</link>
       <pubDate>Wed, 10 Dec 2025 18:13:33 +0000</pubDate>
-      <guid>http://localhost:1313/posts/networking/dnstest/</guid>
+      <guid>https://blog.inxeoz.com/posts/networking/dnstest/</guid>
       <description>&lt;h1 id=&#34;setting-up-local-test-dns-resolution-without-breaking-system-dns&#34;&gt;Setting Up Local *.test DNS Resolution Without Breaking System DNS&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When developing with Frappe Manager, sites are typically created with domains ending in &lt;code&gt;.test&lt;/code&gt; (e.g., &lt;code&gt;demo.test&lt;/code&gt;). To access these locally, you need DNS resolution for &lt;code&gt;*.test&lt;/code&gt; domains to point to &lt;code&gt;127.0.0.1&lt;/code&gt;. However, this should not interfere with your system&amp;rsquo;s existing DNS setup, especially if you&amp;rsquo;re using VPNs like Cloudflare Warp that manage DNS.&lt;/p&gt;&#xA;&lt;p&gt;This guide shows how to configure local DNS for &lt;code&gt;*.test&lt;/code&gt; domains using &lt;code&gt;dnsmasq&lt;/code&gt;, while forwarding all other queries to your system&amp;rsquo;s upstream DNS (e.g., Warp&amp;rsquo;s servers).&lt;/p&gt;</description>
     </item>
   </channel>

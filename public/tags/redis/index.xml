@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redis on blog and posts from inxeoz</title>
-    <link>http://localhost:1313/tags/redis/</link>
+    <link>https://blog.inxeoz.com/tags/redis/</link>
     <description>Recent content in Redis on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Nov 2025 14:35:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.inxeoz.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redis</title>
-      <link>http://localhost:1313/posts/redis_in_arch/redis/</link>
+      <link>https://blog.inxeoz.com/posts/redis_in_arch/redis/</link>
       <pubDate>Thu, 27 Nov 2025 14:35:53 +0000</pubDate>
-      <guid>http://localhost:1313/posts/redis_in_arch/redis/</guid>
+      <guid>https://blog.inxeoz.com/posts/redis_in_arch/redis/</guid>
       <description>&lt;p&gt;You can check which port &lt;strong&gt;Valkey&lt;/strong&gt; is running on in several ways. Here are the easiest methods:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-1-check-the-valkey-configuration-file&#34;&gt;✅ &lt;strong&gt;1. Check the Valkey configuration file&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Open the config file:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grep ^port /etc/valkey/valkey.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Typical output:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;port 6379&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If it&amp;rsquo;s set to &lt;code&gt;0&lt;/code&gt;, Valkey is configured &lt;strong&gt;not&lt;/strong&gt; to listen on a TCP port.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-2-ask-the-running-server-using&#34;&gt;✅ &lt;strong&gt;2. Ask the running server using &lt;code&gt;valkey-cli&lt;/code&gt;&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;If Valkey is running, use:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;valkey-cli CONFIG GET port&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Expected output:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1) &amp;#34;port&amp;#34;&#xA;2) &amp;#34;6379&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This shows the &lt;strong&gt;actual&lt;/strong&gt; port used at runtime (even if changed in memory).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fix Redis In Common Site</title>
-      <link>http://localhost:1313/posts/database/fix_redis_in_common_site/</link>
+      <link>https://blog.inxeoz.com/posts/database/fix_redis_in_common_site/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/database/fix_redis_in_common_site/</guid>
+      <guid>https://blog.inxeoz.com/posts/database/fix_redis_in_common_site/</guid>
       <description>&lt;p&gt;&amp;ldquo;redis_cache&amp;rdquo;: &amp;ldquo;redis://redis-cache:6379&amp;rdquo;,&#xA;&amp;ldquo;redis_queue&amp;rdquo;: &amp;ldquo;redis://redis-queue:6379&amp;rdquo;,&#xA;&amp;ldquo;redis_socketio&amp;rdquo;: &amp;ldquo;redis://redis-socketio:6379&amp;rdquo;,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Redis Setup</title>
-      <link>http://localhost:1313/posts/database/redis_setup/</link>
+      <link>https://blog.inxeoz.com/posts/database/redis_setup/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/database/redis_setup/</guid>
+      <guid>https://blog.inxeoz.com/posts/database/redis_setup/</guid>
       <description>&lt;h1 id=&#34;how-to-fix-redis-connection-errors-in-frappe--erpnext&#34;&gt;How to Fix Redis Connection Errors in Frappe / ERPNext&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-understanding-redis-in-frappe&#34;&gt;🔍 Understanding Redis in Frappe&lt;/h2&gt;&#xA;&lt;p&gt;Frappe uses &lt;strong&gt;three Redis instances&lt;/strong&gt;, each serving a distinct purpose:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Redis Role&lt;/th&gt;&#xA;          &lt;th&gt;Default Port&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Cache&lt;/td&gt;&#xA;          &lt;td&gt;13000&lt;/td&gt;&#xA;          &lt;td&gt;User settings, metadata, and cache&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Queue&lt;/td&gt;&#xA;          &lt;td&gt;11000&lt;/td&gt;&#xA;          &lt;td&gt;Background jobs and async tasks&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SocketIO&lt;/td&gt;&#xA;          &lt;td&gt;12000&lt;/td&gt;&#xA;          &lt;td&gt;Real-time event streaming (websockets)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;When any of these services are stopped or unreachable, Frappe throws connection errors during operations such as:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;App installations (e.g., HRMS, Healthcare)&lt;/li&gt;&#xA;&lt;li&gt;Background job execution&lt;/li&gt;&#xA;&lt;li&gt;Bench start/restart commands&lt;/li&gt;&#xA;&lt;li&gt;Login and session handling&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-common-error-example&#34;&gt;⚠️ Common Error Example&lt;/h2&gt;&#xA;&lt;p&gt;Here’s what a typical Redis connection error looks like:&lt;/p&gt;</description>
     </item>
   </channel>

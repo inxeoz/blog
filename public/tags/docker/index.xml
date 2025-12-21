@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on blog and posts from inxeoz</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://blog.inxeoz.com/tags/docker/</link>
     <description>Recent content in Docker on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.inxeoz.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Container</title>
-      <link>http://localhost:1313/posts/docker/docker-container/</link>
+      <link>https://blog.inxeoz.com/posts/docker/docker-container/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker-container/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/docker-container/</guid>
       <description>&lt;h1 id=&#34;managing-docker-containers-like-a-pro&#34;&gt;Managing Docker Containers Like a Pro&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-what-is-a-docker-container&#34;&gt;⚙️ 1. What is a Docker Container?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;container&lt;/strong&gt; is a running instance of a &lt;strong&gt;Docker image&lt;/strong&gt; — a lightweight, isolated environment that can hold your software, tools, and files.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Image&lt;/strong&gt; = the blueprint (a frozen snapshot, like an OS or preconfigured setup)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt; = the living instance of that image&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When you stop or delete a container, your data and changes can vanish — unless you know how to make them persistent.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Frappe</title>
-      <link>http://localhost:1313/posts/docker/docker_frappe/</link>
+      <link>https://blog.inxeoz.com/posts/docker/docker_frappe/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_frappe/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/docker_frappe/</guid>
       <description>&lt;h1 id=&#34;fixing-common-frappe-docker-errors-backing-up-and-restoring-databases&#34;&gt;Fixing Common Frappe Docker Errors, Backing Up, and Restoring Databases&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;🧠 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Running &lt;strong&gt;Frappe&lt;/strong&gt; or &lt;strong&gt;ERPNext&lt;/strong&gt; in Docker simplifies deployment, but real-world use often brings challenges — like missing CSS, password mismatches, and restoring backups correctly.&lt;/p&gt;&#xA;&lt;p&gt;This guide explains how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Back up your &lt;strong&gt;database and site files&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Restore a full Frappe instance on a fresh Docker setup&lt;/li&gt;&#xA;&lt;li&gt;Fix &lt;strong&gt;common Frappe Docker errors&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Solve the notorious &lt;strong&gt;“CSS not loading”&lt;/strong&gt; issue after restore&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tested on &lt;strong&gt;Arch Linux (Manjaro i3)&lt;/strong&gt; using &lt;strong&gt;Frappe/ERPNext v15&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Network</title>
-      <link>http://localhost:1313/posts/docker/docker_network/</link>
+      <link>https://blog.inxeoz.com/posts/docker/docker_network/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_network/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/docker_network/</guid>
       <description>&lt;h1 id=&#34;how-to-create-and-manage-docker-networks&#34;&gt;How to Create and Manage Docker Networks&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-is-a-docker-network&#34;&gt;🔹 What Is a Docker Network?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Docker network&lt;/strong&gt; is a virtual layer that connects containers. By default, Docker provides some basic network types:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Network Type&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;bridge&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Default network for standalone containers. Containers can talk to each other by name on the same bridge.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;host&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Shares the host machine’s network directly (no isolation).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;none&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Disables networking for the container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;overlay&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Enables communication between containers across multiple Docker hosts (used in Swarm mode).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;macvlan&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Assigns a MAC address to containers, making them appear as physical devices on your LAN.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-1-check-existing-docker-networks&#34;&gt;⚙️ Step 1: Check Existing Docker Networks&lt;/h2&gt;&#xA;&lt;p&gt;Before creating one, you can see what’s already available:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Self</title>
-      <link>http://localhost:1313/posts/docker/docker_self/</link>
+      <link>https://blog.inxeoz.com/posts/docker/docker_self/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_self/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/docker_self/</guid>
       <description>&lt;h1 id=&#34;mastering-docker-building-managing-and-maintaining-your-own-systems&#34;&gt;Mastering Docker: Building, Managing, and Maintaining Your Own Systems&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-understanding-docker-basics&#34;&gt;🚀 1. Understanding Docker Basics&lt;/h2&gt;&#xA;&lt;p&gt;Before diving into management, let’s recap what Docker is built around:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Concept&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A read-only template (like an OS snapshot).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A running instance of an image — like a lightweight VM.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Volume&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Persistent storage shared between host and container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Network&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Virtual bridges for communication between containers.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-2-creating-your-own-system-container&#34;&gt;🧩 2. Creating Your Own System (Container)&lt;/h2&gt;&#xA;&lt;p&gt;To start an Ubuntu-based system:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setup Frappe Containers</title>
-      <link>http://localhost:1313/posts/docker/setup_frappe_containers/</link>
+      <link>https://blog.inxeoz.com/posts/docker/setup_frappe_containers/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/setup_frappe_containers/</guid>
+      <guid>https://blog.inxeoz.com/posts/docker/setup_frappe_containers/</guid>
       <description>&lt;p&gt;docker run -d&#xA;&amp;ndash;name mariadb&#xA;&amp;ndash;network frappe-net&#xA;-e MYSQL_ROOT_PASSWORD=frappe&#xA;-e MYSQL_USER=frappe&#xA;-e MYSQL_PASSWORD=frappe&#xA;-e MYSQL_DATABASE=frappe&#xA;-v mariadb_data:/var/lib/mysql&#xA;-p 3307:3306&#xA;mariadb:10.6&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-cache &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 13000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-queue &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 11000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-socketio &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 12000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;</description>
     </item>
     <item>
       <title>Start Mariadb</title>
-      <link>http://localhost:1313/posts/database/start_mariadb/</link>
+      <link>https://blog.inxeoz.com/posts/database/start_mariadb/</link>
       <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/database/start_mariadb/</guid>
+      <guid>https://blog.inxeoz.com/posts/database/start_mariadb/</guid>
       <description>&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name mariadb &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-e MYSQL_ROOT_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_USER=frappe &lt;br&gt;&#xA;-e MYSQL_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_DATABASE=frappe &lt;br&gt;&#xA;-v mariadb_data:/var/lib/mysql &lt;br&gt;&#xA;-p 3307:3306 &lt;br&gt;&#xA;mariadb:10.6&lt;/p&gt;</description>
     </item>
   </channel>
