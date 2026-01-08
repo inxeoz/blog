@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.154.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://blog.inxeoz.com/posts/database/redis_setup/" />
-  <link rel="canonical" href="https://blog.inxeoz.com/posts/database/redis_setup/" /><link
+  <meta property="og:url" content="http://localhost:1313/posts/database/redis_setup/" />
+  <link rel="canonical" href="http://localhost:1313/posts/database/redis_setup/" /><link
     rel="alternate"
     type="application/atom+xml"
-    href="https://blog.inxeoz.com/index.xml"
+    href="http://localhost:1313/index.xml"
     title="blog and posts from inxeoz"
   />
 
@@ -21,7 +21,7 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
            "@type": "WebPage",
-           "@id": "https:\/\/blog.inxeoz.com\/"
+           "@id": "http:\/\/localhost:1313\/"
       },
       "articleSection" : "posts",
       "name" : "Redis Setup",
@@ -34,9 +34,9 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2025",
-      "datePublished": "2025-11-20 16:01:16 \u002b0000 UTC",
-      "dateModified" : "2025-11-20 16:01:16 \u002b0000 UTC",
-      "url" : "https:\/\/blog.inxeoz.com\/posts\/database\/redis_setup\/",
+      "datePublished": "2025-12-20 01:07:08 \u002b0530 IST",
+      "dateModified" : "2025-12-20 01:07:08 \u002b0530 IST",
+      "url" : "http:\/\/localhost:1313\/posts\/database\/redis_setup\/",
       "keywords" : [ "redis","frappe","troubleshooting", ]
   }
 </script>
@@ -203,8 +203,8 @@
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2025-11-20 16:01:16 UTC">
-                20 Nov 2025
+              <time class="post-date" datetime="2025-12-20 01:07:08 IST">
+                20 Dec 2025
               </time>
               
             </div>
@@ -291,22 +291,22 @@ frappe-bench-redis:redis-socketio            RUNNING
 <h3 id="step-2-create-redis-containers">Step 2: Create Redis Containers</h3>
 <p>Run:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --name redis-cache <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --network frappe-net <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -p 13000:6379 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  redis:6.2
+</span></span></span><span style="display:flex;"><span>  --name redis-cache <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --network frappe-net <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -p 13000:6379 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  redis:6.2
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --name redis-queue <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --network frappe-net <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -p 11000:6379 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  redis:6.2
+</span></span></span><span style="display:flex;"><span>  --name redis-queue <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --network frappe-net <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -p 11000:6379 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  redis:6.2
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>docker run -d <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --name redis-socketio <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --network frappe-net <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -p 12000:6379 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  redis:6.2
+</span></span></span><span style="display:flex;"><span>  --name redis-socketio <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --network frappe-net <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -p 12000:6379 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  redis:6.2
 </span></span></code></pre></div><p>Make sure they appear when you run <code>docker ps</code>.</p>
 <hr>
 <h3 id="step-3-update-frappe-configuration">Step 3: Update Frappe Configuration</h3>

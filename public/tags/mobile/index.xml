@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/mobile/</link>
+    <link>http://localhost:1313/tags/mobile/</link>
     <description>Recent content in Mobile on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Nov 2025 14:33:24 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>react-native</title>
-      <link>https://blog.inxeoz.com/posts/react-native/react-native/</link>
-      <pubDate>Sat, 22 Nov 2025 11:00:59 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/react-native/react-native/</guid>
+      <title>React Native</title>
+      <link>http://localhost:1313/posts/react-native/react-native/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/react-native/react-native/</guid>
       <description>&lt;h1 id=&#34;-how-to-run-react-native-on-arch-linux-and-fix-common-errors&#34;&gt;🐧 &lt;strong&gt;How to Run React Native on Arch Linux (and Fix Common Errors)&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;React Native works beautifully on Arch Linux — but because Arch uses newer packages (Java, SDK Tools, etc.), developers often run into version mismatches or Gradle issues that do not appear on Ubuntu or macOS.&#xA;This guide explains &lt;strong&gt;how to correctly install the React Native Android toolchain on Arch&lt;/strong&gt;, run your app, and fix the most common errors.&lt;/p&gt;</description>
     </item>
   </channel>

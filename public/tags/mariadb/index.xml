@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mariadb on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/mariadb/</link>
+    <link>http://localhost:1313/tags/mariadb/</link>
     <description>Recent content in Mariadb on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Start Mariadb</title>
-      <link>https://blog.inxeoz.com/posts/database/start_mariadb/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/database/start_mariadb/</guid>
+      <title>Start MariaDB</title>
+      <link>http://localhost:1313/posts/database/start_mariadb/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/database/start_mariadb/</guid>
       <description>&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name mariadb &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-e MYSQL_ROOT_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_USER=frappe &lt;br&gt;&#xA;-e MYSQL_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_DATABASE=frappe &lt;br&gt;&#xA;-v mariadb_data:/var/lib/mysql &lt;br&gt;&#xA;-p 3307:3306 &lt;br&gt;&#xA;mariadb:10.6&lt;/p&gt;</description>
     </item>
   </channel>

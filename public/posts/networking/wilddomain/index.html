@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.154.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://blog.inxeoz.com/posts/networking/wilddomain/" />
-  <link rel="canonical" href="https://blog.inxeoz.com/posts/networking/wilddomain/" /><link
+  <meta property="og:url" content="http://localhost:1313/posts/networking/wilddomain/" />
+  <link rel="canonical" href="http://localhost:1313/posts/networking/wilddomain/" /><link
     rel="alternate"
     type="application/atom+xml"
-    href="https://blog.inxeoz.com/index.xml"
+    href="http://localhost:1313/index.xml"
     title="blog and posts from inxeoz"
   />
 
@@ -21,12 +21,12 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
            "@type": "WebPage",
-           "@id": "https:\/\/blog.inxeoz.com\/"
+           "@id": "http:\/\/localhost:1313\/"
       },
       "articleSection" : "posts",
-      "name" : "How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System",
-      "headline" : "How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System",
-      "description" : "Here is the final polished article, now including a clean, complete \u0026ldquo;How to Remove Wildcard Domain Resolution\u0026rdquo; section. This version is publication-ready.\n📝 How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System (Modern systemd-resolved \u002b dnsmasq Split DNS Method) Local development environments often need custom domains like:\nhttp:\/\/myapp.test http:\/\/api.test http:\/\/backend.internal.test But achieving wildcard resolution (i.e., *.test → 127.0.0.1) is tricky. Most tutorials break DNS by:\nOverwriting \/etc\/resolv.conf Disabling systemd-resolved Hijacking port 53 Interfering with libvirt DNS Using .local (reserved for mDNS) This article walks you through the correct, safe, reversible approach that works on:\n",
+      "name" : "How to Safely Set Up Wildcard Domain Resolution on Linux",
+      "headline" : "How to Safely Set Up Wildcard Domain Resolution on Linux",
+      "description" : "Safe wildcard domain resolution setup using systemd-resolved and dnsmasq without breaking system DNS",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -34,30 +34,22 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2025",
-      "datePublished": "2025-12-09 20:27:27 \u002b0000 UTC",
-      "dateModified" : "2025-12-09 20:27:27 \u002b0000 UTC",
-      "url" : "https:\/\/blog.inxeoz.com\/posts\/networking\/wilddomain\/",
-      "keywords" : [  ]
+      "datePublished": "2025-12-20 01:07:08 \u002b0530 IST",
+      "dateModified" : "2025-12-20 01:07:08 \u002b0530 IST",
+      "url" : "http:\/\/localhost:1313\/posts\/networking\/wilddomain\/",
+      "keywords" : [ "dns","wildcard","linux","systemd","dnsmasq", ]
   }
 </script>
-<title>How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System</title>
-  <meta property="og:title" content="How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System" />
+<title>How to Safely Set Up Wildcard Domain Resolution on Linux</title>
+  <meta property="og:title" content="How to Safely Set Up Wildcard Domain Resolution on Linux" />
   <meta property="og:type" content="article" />
   <meta
     property="og:description"
-    content="Here is the final polished article, now including a clean, complete &ldquo;How to Remove Wildcard Domain Resolution&rdquo; section. This version is publication-ready.
-📝 How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System (Modern systemd-resolved &#43; dnsmasq Split DNS Method) Local development environments often need custom domains like:
-http://myapp.test http://api.test http://backend.internal.test But achieving wildcard resolution (i.e., *.test → 127.0.0.1) is tricky. Most tutorials break DNS by:
-Overwriting /etc/resolv.conf Disabling systemd-resolved Hijacking port 53 Interfering with libvirt DNS Using .local (reserved for mDNS) This article walks you through the correct, safe, reversible approach that works on:
-"
+    content="Safe wildcard domain resolution setup using systemd-resolved and dnsmasq without breaking system DNS"
   />
   <meta
     name="description"
-    content="Here is the final polished article, now including a clean, complete &ldquo;How to Remove Wildcard Domain Resolution&rdquo; section. This version is publication-ready.
-📝 How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System (Modern systemd-resolved &#43; dnsmasq Split DNS Method) Local development environments often need custom domains like:
-http://myapp.test http://api.test http://backend.internal.test But achieving wildcard resolution (i.e., *.test → 127.0.0.1) is tricky. Most tutorials break DNS by:
-Overwriting /etc/resolv.conf Disabling systemd-resolved Hijacking port 53 Interfering with libvirt DNS Using .local (reserved for mDNS) This article walks you through the correct, safe, reversible approach that works on:
-"
+    content="Safe wildcard domain resolution setup using systemd-resolved and dnsmasq without breaking system DNS"
   />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
   
@@ -206,13 +198,13 @@ Overwriting /etc/resolv.conf Disabling systemd-resolved Hijacking port 53 Interf
 
         </div>
         <header class="post-header">
-          <h1 class="post-title">How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System</h1>
+          <h1 class="post-title">How to Safely Set Up Wildcard Domain Resolution on Linux</h1>
           
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2025-12-09 20:27:27 UTC">
-                09 Dec 2025
+              <time class="post-date" datetime="2025-12-20 01:07:08 IST">
+                20 Dec 2025
               </time>
               
             </div>
@@ -453,6 +445,36 @@ No override of system functions.</p>
 
         <div class="row middle-xs">
           <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/dns/">
+                dns
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/wildcard/">
+                wildcard
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/linux/">
+                linux
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/systemd/">
+                systemd
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/dnsmasq/">
+                dnsmasq
+              </a>
+            </div>
             
           </div>
         </div>

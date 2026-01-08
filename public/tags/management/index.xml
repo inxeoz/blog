@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/management/</link>
+    <link>http://localhost:1313/tags/management/</link>
     <description>Recent content in Management on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Container</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker-container/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker-container/</guid>
+      <link>http://localhost:1313/posts/docker/docker-container/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker-container/</guid>
       <description>&lt;h1 id=&#34;managing-docker-containers-like-a-pro&#34;&gt;Managing Docker Containers Like a Pro&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-what-is-a-docker-container&#34;&gt;⚙️ 1. What is a Docker Container?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;container&lt;/strong&gt; is a running instance of a &lt;strong&gt;Docker image&lt;/strong&gt; — a lightweight, isolated environment that can hold your software, tools, and files.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Image&lt;/strong&gt; = the blueprint (a frozen snapshot, like an OS or preconfigured setup)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt; = the living instance of that image&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When you stop or delete a container, your data and changes can vanish — unless you know how to make them persistent.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Self</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker_self/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker_self/</guid>
+      <link>http://localhost:1313/posts/docker/docker_self/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_self/</guid>
       <description>&lt;h1 id=&#34;mastering-docker-building-managing-and-maintaining-your-own-systems&#34;&gt;Mastering Docker: Building, Managing, and Maintaining Your Own Systems&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-understanding-docker-basics&#34;&gt;🚀 1. Understanding Docker Basics&lt;/h2&gt;&#xA;&lt;p&gt;Before diving into management, let’s recap what Docker is built around:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Concept&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A read-only template (like an OS snapshot).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A running instance of an image — like a lightweight VM.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Volume&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Persistent storage shared between host and container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Network&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Virtual bridges for communication between containers.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-2-creating-your-own-system-container&#34;&gt;🧩 2. Creating Your Own System (Container)&lt;/h2&gt;&#xA;&lt;p&gt;To start an Ubuntu-based system:&lt;/p&gt;</description>
     </item>
   </channel>

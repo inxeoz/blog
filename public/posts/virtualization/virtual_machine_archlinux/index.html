@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.154.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://blog.inxeoz.com/posts/virtualization/virtual_machine_archlinux/" />
-  <link rel="canonical" href="https://blog.inxeoz.com/posts/virtualization/virtual_machine_archlinux/" /><link
+  <meta property="og:url" content="http://localhost:1313/posts/virtualization/virtual_machine_archlinux/" />
+  <link rel="canonical" href="http://localhost:1313/posts/virtualization/virtual_machine_archlinux/" /><link
     rel="alternate"
     type="application/atom+xml"
-    href="https://blog.inxeoz.com/index.xml"
+    href="http://localhost:1313/index.xml"
     title="blog and posts from inxeoz"
   />
 
@@ -21,11 +21,11 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
            "@type": "WebPage",
-           "@id": "https:\/\/blog.inxeoz.com\/"
+           "@id": "http:\/\/localhost:1313\/"
       },
       "articleSection" : "posts",
-      "name" : "Virtual Machine Archlinux",
-      "headline" : "Virtual Machine Archlinux",
+      "name" : "Virtual Machine Arch Linux",
+      "headline" : "Virtual Machine Arch Linux",
       "description" : "Complete Arch Linux KVM installation guide",
       "inLanguage" : "en-US",
       "author" : "",
@@ -34,14 +34,14 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2025",
-      "datePublished": "2025-11-20 16:01:16 \u002b0000 UTC",
-      "dateModified" : "2025-11-20 16:01:16 \u002b0000 UTC",
-      "url" : "https:\/\/blog.inxeoz.com\/posts\/virtualization\/virtual_machine_archlinux\/",
+      "datePublished": "2025-12-20 01:07:08 \u002b0530 IST",
+      "dateModified" : "2025-12-20 01:07:08 \u002b0530 IST",
+      "url" : "http:\/\/localhost:1313\/posts\/virtualization\/virtual_machine_archlinux\/",
       "keywords" : [ "kvm","archlinux","virtualization", ]
   }
 </script>
-<title>Virtual Machine Archlinux</title>
-  <meta property="og:title" content="Virtual Machine Archlinux" />
+<title>Virtual Machine Arch Linux</title>
+  <meta property="og:title" content="Virtual Machine Arch Linux" />
   <meta property="og:type" content="article" />
   <meta
     property="og:description"
@@ -198,13 +198,13 @@
 
         </div>
         <header class="post-header">
-          <h1 class="post-title">Virtual Machine Archlinux</h1>
+          <h1 class="post-title">Virtual Machine Arch Linux</h1>
           
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2025-11-20 16:01:16 UTC">
-                20 Nov 2025
+              <time class="post-date" datetime="2025-12-20 01:07:08 IST">
+                20 Dec 2025
               </time>
               
             </div>
@@ -288,15 +288,15 @@
 <p>Virt-manager uses libvirt/qemu under the hood and provides an easy interface. ([ArchWiki][4])</p>
 <h2 id="b-cli-virt-install--example-uefi--20-gb-disk-4gb-ram">B) CLI (virt-install) — example (UEFI + 20 GB disk, 4GB RAM)</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo virt-install <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --name ubuntu-22.04 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --ram <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --vcpus <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --disk path<span style="color:#f92672">=</span>/var/lib/libvirt/images/ubuntu-22.04.qcow2,size<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --os-variant ubuntu22.04 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --cdrom /path/to/ubuntu-22.04-desktop-amd64.iso <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --network network<span style="color:#f92672">=</span>default <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --graphics spice <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --boot uefi
+</span></span></span><span style="display:flex;"><span>  --name ubuntu-22.04 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --ram <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --vcpus <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --disk path<span style="color:#f92672">=</span>/var/lib/libvirt/images/ubuntu-22.04.qcow2,size<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --os-variant ubuntu22.04 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --cdrom /path/to/ubuntu-22.04-desktop-amd64.iso <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --network network<span style="color:#f92672">=</span>default <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --graphics spice <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --boot uefi
 </span></span></code></pre></div><p>If you want to explicitly point QEMU to OVMF firmware files (on Arch they come from <code>edk2-ovmf</code>), paths typically live under <code>/usr/share/edk2-ovmf</code> or <code>/usr/share/edk2/x64</code> depending on package version — virt-manager can select them automatically. ([archlinux.org][5])</p>
 <hr>
 <h1 id="7-startingstopping-and-management-quick-commands">7) Starting/stopping and management quick commands</h1>
@@ -359,6 +359,8 @@
   <ul>
     
     <li><a href="/posts/virtualization/kvm_hosting_registry/">KVM and Hosting</a></li>
+    
+    <li><a href="/posts/redis_in_arch/redis/">Redis</a></li>
     
   </ul>
 </div>

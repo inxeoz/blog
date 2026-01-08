@@ -2,213 +2,346 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Dec 2025 18:13:33 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jan 2026 00:08:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dns</title>
-      <link>https://blog.inxeoz.com/tags/dns/</link>
-      <pubDate>Wed, 10 Dec 2025 18:13:33 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/dns/</guid>
+      <title>Authentication</title>
+      <link>http://localhost:1313/tags/authentication/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/authentication/</guid>
       <description></description>
     </item>
     <item>
-      <title>Networking</title>
-      <link>https://blog.inxeoz.com/tags/networking/</link>
-      <pubDate>Wed, 10 Dec 2025 18:13:33 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/networking/</guid>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
     </item>
     <item>
-      <title>Systemd</title>
-      <link>https://blog.inxeoz.com/tags/systemd/</link>
-      <pubDate>Wed, 10 Dec 2025 18:13:33 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/systemd/</guid>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>Archlinux</title>
-      <link>https://blog.inxeoz.com/tags/archlinux/</link>
-      <pubDate>Thu, 27 Nov 2025 14:35:53 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/archlinux/</guid>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
-      <title>Redis</title>
-      <link>https://blog.inxeoz.com/tags/redis/</link>
-      <pubDate>Thu, 27 Nov 2025 14:35:53 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Valkey</title>
-      <link>https://blog.inxeoz.com/tags/valkey/</link>
-      <pubDate>Thu, 27 Nov 2025 14:35:53 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/valkey/</guid>
+      <title>Ssh</title>
+      <link>http://localhost:1313/tags/ssh/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>https://blog.inxeoz.com/tags/android/</link>
-      <pubDate>Sat, 22 Nov 2025 11:00:59 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/android/</guid>
+      <link>http://localhost:1313/tags/android/</link>
+      <pubDate>Thu, 08 Jan 2026 23:06:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/android/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mobile</title>
-      <link>https://blog.inxeoz.com/tags/mobile/</link>
-      <pubDate>Sat, 22 Nov 2025 11:00:59 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/mobile/</guid>
+      <title>Array-Networks</title>
+      <link>http://localhost:1313/tags/array-networks/</link>
+      <pubDate>Thu, 08 Jan 2026 23:06:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/array-networks/</guid>
       <description></description>
     </item>
     <item>
-      <title>React-Native</title>
-      <link>https://blog.inxeoz.com/tags/react-native/</link>
-      <pubDate>Sat, 22 Nov 2025 11:00:59 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/react-native/</guid>
+      <title>Socks-Proxy</title>
+      <link>http://localhost:1313/tags/socks-proxy/</link>
+      <pubDate>Thu, 08 Jan 2026 23:06:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/socks-proxy/</guid>
       <description></description>
     </item>
     <item>
-      <title>Backup</title>
-      <link>https://blog.inxeoz.com/tags/backup/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/backup/</guid>
+      <title>Vpn</title>
+      <link>http://localhost:1313/tags/vpn/</link>
+      <pubDate>Thu, 08 Jan 2026 23:06:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/vpn/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cloudflare</title>
-      <link>https://blog.inxeoz.com/tags/cloudflare/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/cloudflare/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Configuration</title>
-      <link>https://blog.inxeoz.com/tags/configuration/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/configuration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Containers</title>
-      <link>https://blog.inxeoz.com/tags/containers/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/containers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.inxeoz.com/tags/database/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/database/</guid>
+      <title>Cicd</title>
+      <link>http://localhost:1313/tags/cicd/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/tags/cicd/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://blog.inxeoz.com/tags/docker/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/docker/</guid>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Frappe</title>
-      <link>https://blog.inxeoz.com/tags/frappe/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/frappe/</guid>
+      <link>http://localhost:1313/tags/frappe/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/tags/frappe/</guid>
       <description></description>
     </item>
     <item>
-      <title>Kvm</title>
-      <link>https://blog.inxeoz.com/tags/kvm/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/kvm/</guid>
+      <title>Jenkins</title>
+      <link>http://localhost:1313/tags/jenkins/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/tags/jenkins/</guid>
       <description></description>
     </item>
     <item>
-      <title>Learning</title>
-      <link>https://blog.inxeoz.com/tags/learning/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/learning/</guid>
+      <title>Offline</title>
+      <link>http://localhost:1313/tags/offline/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/tags/offline/</guid>
       <description></description>
     </item>
     <item>
-      <title>Management</title>
-      <link>https://blog.inxeoz.com/tags/management/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/management/</guid>
+      <title>Air-Gapped</title>
+      <link>http://localhost:1313/tags/air-gapped/</link>
+      <pubDate>Tue, 06 Jan 2026 18:02:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/air-gapped/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mariadb</title>
-      <link>https://blog.inxeoz.com/tags/mariadb/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/mariadb/</guid>
+      <title>Deployment</title>
+      <link>http://localhost:1313/tags/deployment/</link>
+      <pubDate>Tue, 06 Jan 2026 18:02:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/deployment/</guid>
       <description></description>
     </item>
     <item>
-      <title>Persistence</title>
-      <link>https://blog.inxeoz.com/tags/persistence/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/persistence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://blog.inxeoz.com/tags/projects/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/projects/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://blog.inxeoz.com/tags/python/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Restoration</title>
-      <link>https://blog.inxeoz.com/tags/restoration/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/restoration/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Setup</title>
-      <link>https://blog.inxeoz.com/tags/setup/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/setup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>System</title>
-      <link>https://blog.inxeoz.com/tags/system/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/system/</guid>
+      <title>Erpnext</title>
+      <link>http://localhost:1313/tags/erpnext/</link>
+      <pubDate>Tue, 06 Jan 2026 18:02:25 +0530</pubDate>
+      <guid>http://localhost:1313/tags/erpnext/</guid>
       <description></description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>https://blog.inxeoz.com/tags/troubleshooting/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/troubleshooting/</guid>
+      <link>http://localhost:1313/tags/troubleshooting/</link>
+      <pubDate>Tue, 06 Jan 2026 17:39:13 +0530</pubDate>
+      <guid>http://localhost:1313/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns</title>
+      <link>http://localhost:1313/tags/dns/</link>
+      <pubDate>Sat, 20 Dec 2025 01:08:12 +0530</pubDate>
+      <guid>http://localhost:1313/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/tags/networking/</link>
+      <pubDate>Sat, 20 Dec 2025 01:08:12 +0530</pubDate>
+      <guid>http://localhost:1313/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systemd</title>
+      <link>http://localhost:1313/tags/systemd/</link>
+      <pubDate>Sat, 20 Dec 2025 01:08:12 +0530</pubDate>
+      <guid>http://localhost:1313/tags/systemd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arch-Linux</title>
+      <link>http://localhost:1313/tags/arch-linux/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Archlinux</title>
+      <link>http://localhost:1313/tags/archlinux/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backup</title>
+      <link>http://localhost:1313/tags/backup/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bench</title>
+      <link>http://localhost:1313/tags/bench/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/bench/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>http://localhost:1313/tags/cloudflare/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/tags/configuration/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/tags/containers/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/tags/database/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnsmasq</title>
+      <link>http://localhost:1313/tags/dnsmasq/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/dnsmasq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/tags/installation/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/installation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kvm</title>
+      <link>http://localhost:1313/tags/kvm/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/kvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Management</title>
+      <link>http://localhost:1313/tags/management/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mariadb</title>
+      <link>http://localhost:1313/tags/mariadb/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1313/tags/mobile/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/mobile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Persistence</title>
+      <link>http://localhost:1313/tags/persistence/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/persistence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/tags/projects/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React-Native</title>
+      <link>http://localhost:1313/tags/react-native/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/react-native/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>http://localhost:1313/tags/redis/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Restoration</title>
+      <link>http://localhost:1313/tags/restoration/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/restoration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/tags/setup/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/setup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System</title>
+      <link>http://localhost:1313/tags/system/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/system/</guid>
       <description></description>
     </item>
     <item>
       <title>Tunnel</title>
-      <link>https://blog.inxeoz.com/tags/tunnel/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/tunnel/</guid>
+      <link>http://localhost:1313/tags/tunnel/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/tunnel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Valkey</title>
+      <link>http://localhost:1313/tags/valkey/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/valkey/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>https://blog.inxeoz.com/tags/virtualization/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/tags/virtualization/</guid>
+      <link>http://localhost:1313/tags/virtualization/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wildcard</title>
+      <link>http://localhost:1313/tags/wildcard/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/tags/wildcard/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backup on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/backup/</link>
+    <link>http://localhost:1313/tags/backup/</link>
     <description>Recent content in Backup on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Frappe</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker_frappe/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker_frappe/</guid>
+      <link>http://localhost:1313/posts/docker/docker_frappe/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_frappe/</guid>
       <description>&lt;h1 id=&#34;fixing-common-frappe-docker-errors-backing-up-and-restoring-databases&#34;&gt;Fixing Common Frappe Docker Errors, Backing Up, and Restoring Databases&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;🧠 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Running &lt;strong&gt;Frappe&lt;/strong&gt; or &lt;strong&gt;ERPNext&lt;/strong&gt; in Docker simplifies deployment, but real-world use often brings challenges — like missing CSS, password mismatches, and restoring backups correctly.&lt;/p&gt;&#xA;&lt;p&gt;This guide explains how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Back up your &lt;strong&gt;database and site files&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Restore a full Frappe instance on a fresh Docker setup&lt;/li&gt;&#xA;&lt;li&gt;Fix &lt;strong&gt;common Frappe Docker errors&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Solve the notorious &lt;strong&gt;“CSS not loading”&lt;/strong&gt; issue after restore&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tested on &lt;strong&gt;Arch Linux (Manjaro i3)&lt;/strong&gt; using &lt;strong&gt;Frappe/ERPNext v15&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

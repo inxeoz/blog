@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Restoration on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/restoration/</link>
+    <link>http://localhost:1313/tags/restoration/</link>
     <description>Recent content in Restoration on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/restoration/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/restoration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Restore</title>
-      <link>https://blog.inxeoz.com/posts/frappe/how_to_restore/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/frappe/how_to_restore/</guid>
+      <link>http://localhost:1313/posts/frappe/how_to_restore/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/how_to_restore/</guid>
       <description>&lt;h1 id=&#34;how-to-restore-frappe_db_backup_utf8sql&#34;&gt;How to Restore frappe_db_backup_utf8.sql&lt;/h1&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ubuntu/Debian system with Python 3.10+ and Node.js installed.&lt;/li&gt;&#xA;&lt;li&gt;MariaDB/MySQL installed and configured.&lt;/li&gt;&#xA;&lt;li&gt;Git installed.&lt;/li&gt;&#xA;&lt;li&gt;Access to sudo for system installations.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;step-1-install-frappe-bench&#34;&gt;Step 1: Install Frappe Bench&lt;/h2&gt;&#xA;&lt;p&gt;Install Frappe Bench (the development framework):&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install python3-dev python3-pip python3-venv redis-server&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip3 install frappe-bench&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;step-2-initialize-bench-and-install-frappe&#34;&gt;Step 2: Initialize Bench and Install Frappe&lt;/h2&gt;&#xA;&lt;p&gt;Create a new bench and install Frappe version 15.72.4:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bench init frappe-bench --frappe-branch version-15&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd frappe-bench&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bench switch-to-branch version-15 frappe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bench update --patch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;step-3-install-required-apps&#34;&gt;Step 3: Install Required Apps&lt;/h2&gt;&#xA;&lt;p&gt;Install the specific app versions from the backup:&lt;/p&gt;</description>
     </item>
   </channel>

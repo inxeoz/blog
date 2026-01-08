@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jan 2026 00:08:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complete GitHub SSH Setup Guide for Linux Developers</title>
+      <link>http://localhost:1313/posts/networking/ssh_key/</link>
+      <pubDate>Fri, 09 Jan 2026 00:08:07 +0530</pubDate>
+      <guid>http://localhost:1313/posts/networking/ssh_key/</guid>
+      <description>&lt;h1 id=&#34;complete-github-ssh-setup-guide-for-linux-developers&#34;&gt;Complete GitHub SSH Setup Guide for Linux Developers&lt;/h1&gt;&#xA;&lt;p&gt;SSH keys provide secure, passwordless authentication to GitHub repositories. This guide covers every step from enabling SSH to testing the connection, tailored for Arch Linux/Manjaro users with i3/Hyprland window managers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ssh-key-concepts&#34;&gt;SSH Key Concepts&lt;/h2&gt;&#xA;&lt;p&gt;SSH uses public-key cryptography with a private key (stays on your machine) and public key (shared with GitHub). The private key never leaves your system; GitHub verifies your identity by checking your public key signature.[1][7]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Connecting to Array Networks VPN from Linux</title>
+      <link>http://localhost:1313/posts/networking/connecting_array_networks_vpn/</link>
+      <pubDate>Thu, 08 Jan 2026 23:06:25 +0530</pubDate>
+      <guid>http://localhost:1313/posts/networking/connecting_array_networks_vpn/</guid>
+      <description>&lt;h1 id=&#34;connecting-to-an-array-networks-vpn-from-linux-using-motionpro-android--termux--socks-proxy&#34;&gt;Connecting to an Array Networks VPN from Linux using MotionPro (Android) + Termux + SOCKS Proxy&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Array Networks SSL VPN deployments often enforce &lt;strong&gt;MotionPro device identification (machineid / hardware ID)&lt;/strong&gt;, which blocks Linux and third-party VPN clients such as OpenConnect.&#xA;However, many organizations &lt;strong&gt;allow mobile VPN access&lt;/strong&gt; via the official &lt;strong&gt;MotionPro Android application&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This article documents a &lt;strong&gt;fully working, policy-compliant method&lt;/strong&gt; to access internal resources from a Linux host by:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Safely Set Up Wildcard Domain Resolution on Linux</title>
+      <link>http://localhost:1313/posts/networking/wilddomain/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/networking/wilddomain/</guid>
+      <description>&lt;p&gt;Here is the &lt;strong&gt;final polished article&lt;/strong&gt;, now including a clean, complete &lt;strong&gt;&amp;ldquo;How to Remove Wildcard Domain Resolution&amp;rdquo;&lt;/strong&gt; section.&#xA;This version is publication-ready.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-how-to-safely-set-up-wildcard-domain-resolution-on-linux-without-breaking-your-system&#34;&gt;📝 &lt;strong&gt;How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;h3 id=&#34;modern-systemd-resolved--dnsmasq-split-dns-method&#34;&gt;&lt;em&gt;(Modern systemd-resolved + dnsmasq Split DNS Method)&lt;/em&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Local development environments often need custom domains like:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http://myapp.test&#xA;http://api.test&#xA;http://backend.internal.test&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But achieving wildcard resolution (i.e., &lt;code&gt;*.test → 127.0.0.1&lt;/code&gt;) is tricky.&#xA;Most tutorials break DNS by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Overwriting &lt;code&gt;/etc/resolv.conf&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Disabling systemd-resolved&lt;/li&gt;&#xA;&lt;li&gt;Hijacking port 53&lt;/li&gt;&#xA;&lt;li&gt;Interfering with libvirt DNS&lt;/li&gt;&#xA;&lt;li&gt;Using &lt;code&gt;.local&lt;/code&gt; (reserved for mDNS)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This article walks you through &lt;strong&gt;the correct, safe, reversible approach&lt;/strong&gt; that works on:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

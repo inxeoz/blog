@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deployment on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/deployment/</link>
+    <description>Recent content in Deployment on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jan 2026 18:02:25 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploying ERPNext Frappe with Docker in Offline Air-Gapped Environment</title>
+      <link>http://localhost:1313/posts/frappe/full_article_deploy/</link>
+      <pubDate>Tue, 06 Jan 2026 18:02:25 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/full_article_deploy/</guid>
+      <description>&lt;h1 id=&#34;-deploying-erpnext-frappe-with-docker-in-an-offline--air-gapped-environment&#34;&gt;🚀 Deploying ERPNext (Frappe) with Docker in an Offline / Air-Gapped Environment&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;From Local Setup to Server Deployment (Complete Guide)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-why-this-guide-exists&#34;&gt;1. Why This Guide Exists&lt;/h2&gt;&#xA;&lt;p&gt;In many enterprise environments:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Internet access is &lt;strong&gt;restricted or completely blocked&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servers are accessible &lt;strong&gt;only via SSH&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Docker images must be &lt;strong&gt;pre-approved&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Production servers &lt;strong&gt;cannot pull images from Docker Hub&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide shows how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build an &lt;strong&gt;offline Docker image bundle (&lt;code&gt;.tar&lt;/code&gt;)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Transfer it to a &lt;strong&gt;remote server&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Load and run &lt;strong&gt;ERPNext (Frappe) fully offline&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Operate &lt;strong&gt;backend, database, and workers safely&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Fix common real-world issues (ports, frontend crashes, networking)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everything here is &lt;strong&gt;battle-tested&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Running Frappe ERPNext Docker Deployments Fully Offline</title>
+      <link>http://localhost:1313/posts/frappe/frappe_images_tar/</link>
+      <pubDate>Tue, 06 Jan 2026 17:25:35 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/frappe_images_tar/</guid>
+      <description>&lt;h1 id=&#34;running-frappe--erpnext-docker-deployments-fully-offline&#34;&gt;Running Frappe / ERPNext Docker Deployments Fully Offline&lt;/h1&gt;&#xA;&lt;h2 id=&#34;building-exporting-loading-and-serving-docker-images-without-internet&#34;&gt;Building, Exporting, Loading, and Serving Docker Images Without Internet&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-purpose-of-this-guide&#34;&gt;1. Purpose of This Guide&lt;/h2&gt;&#xA;&lt;p&gt;This article explains &lt;strong&gt;how to deploy Docker applications in an offline / air-gapped environment&lt;/strong&gt;, using &lt;strong&gt;Frappe / ERPNext&lt;/strong&gt; as a real example.&lt;/p&gt;&#xA;&lt;p&gt;We specifically base this workflow on the official repository:&lt;/p&gt;&#xA;&lt;p&gt;👉 &lt;strong&gt;&lt;a href=&#34;https://github.com/frappe/frappe_docker&#34;&gt;https://github.com/frappe/frappe_docker&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The same approach applies to &lt;strong&gt;any Docker Compose–based system&lt;/strong&gt;, not just Frappe.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-why-offline-docker-deployment-is-hard&#34;&gt;2. Why Offline Docker Deployment Is Hard&lt;/h2&gt;&#xA;&lt;p&gt;Docker is designed for &lt;strong&gt;online registries&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

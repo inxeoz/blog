@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wildcard on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/wildcard/</link>
+    <description>Recent content in Wildcard on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wildcard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Safely Set Up Wildcard Domain Resolution on Linux</title>
+      <link>http://localhost:1313/posts/networking/wilddomain/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/networking/wilddomain/</guid>
+      <description>&lt;p&gt;Here is the &lt;strong&gt;final polished article&lt;/strong&gt;, now including a clean, complete &lt;strong&gt;&amp;ldquo;How to Remove Wildcard Domain Resolution&amp;rdquo;&lt;/strong&gt; section.&#xA;This version is publication-ready.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-how-to-safely-set-up-wildcard-domain-resolution-on-linux-without-breaking-your-system&#34;&gt;📝 &lt;strong&gt;How to Safely Set Up Wildcard Domain Resolution on Linux Without Breaking Your System&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;h3 id=&#34;modern-systemd-resolved--dnsmasq-split-dns-method&#34;&gt;&lt;em&gt;(Modern systemd-resolved + dnsmasq Split DNS Method)&lt;/em&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Local development environments often need custom domains like:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http://myapp.test&#xA;http://api.test&#xA;http://backend.internal.test&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But achieving wildcard resolution (i.e., &lt;code&gt;*.test → 127.0.0.1&lt;/code&gt;) is tricky.&#xA;Most tutorials break DNS by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Overwriting &lt;code&gt;/etc/resolv.conf&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Disabling systemd-resolved&lt;/li&gt;&#xA;&lt;li&gt;Hijacking port 53&lt;/li&gt;&#xA;&lt;li&gt;Interfering with libvirt DNS&lt;/li&gt;&#xA;&lt;li&gt;Using &lt;code&gt;.local&lt;/code&gt; (reserved for mDNS)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This article walks you through &lt;strong&gt;the correct, safe, reversible approach&lt;/strong&gt; that works on:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

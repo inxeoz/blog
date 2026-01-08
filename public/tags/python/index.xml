@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <description>Recent content in Python on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Dec 2025 01:07:08 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Python By Projects</title>
-      <link>https://blog.inxeoz.com/posts/python/learn-python-by-projects/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/python/learn-python-by-projects/</guid>
+      <link>http://localhost:1313/posts/python/learn-python-by-projects/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/python/learn-python-by-projects/</guid>
       <description>&lt;h1 id=&#34;-level-0--absolute-beginner-basics&#34;&gt;✅ &lt;strong&gt;LEVEL 0 — ABSOLUTE BEGINNER (Basics)&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;h3 id=&#34;-skills-covered&#34;&gt;🎯 Skills Covered&lt;/h3&gt;&#xA;&lt;p&gt;Basic syntax, variables, data types, loops, conditionals, lists/tuples/sets/dicts, exceptions, functions, modules.&#xA;*(From roadmap: “Learn the Basics”, left side of page 1) *&lt;/p&gt;&#xA;&lt;h3 id=&#34;-projects&#34;&gt;📌 Projects&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Simple Calculator CLI&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Covers: variables, conditionals, loops, functions, exceptions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Unit Converter (km → miles, INR → USD, etc.)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Covers: type casting, input/output, modules.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Personal Expense Tracker (JSON-based)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dicts, lists, loops, file I/O, exception handling.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mini Contact Book with Search&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

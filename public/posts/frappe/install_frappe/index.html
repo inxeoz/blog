@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.154.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://blog.inxeoz.com/posts/frappe/install_frappe/" />
-  <link rel="canonical" href="https://blog.inxeoz.com/posts/frappe/install_frappe/" /><link
+  <meta property="og:url" content="http://localhost:1313/posts/frappe/install_frappe/" />
+  <link rel="canonical" href="http://localhost:1313/posts/frappe/install_frappe/" /><link
     rel="alternate"
     type="application/atom+xml"
-    href="https://blog.inxeoz.com/index.xml"
+    href="http://localhost:1313/index.xml"
     title="blog and posts from inxeoz"
   />
 
@@ -21,12 +21,12 @@
       "@type" : "BlogPosting",
       "mainEntityOfPage": {
            "@type": "WebPage",
-           "@id": "https:\/\/blog.inxeoz.com\/"
+           "@id": "http:\/\/localhost:1313\/"
       },
       "articleSection" : "posts",
       "name" : "How to Install Frappe Bench on Arch Linux",
       "headline" : "How to Install Frappe Bench on Arch Linux",
-      "description" : "How to Install Frappe Bench on Arch Linux 📦 1. Install System Dependencies Begin with a full system update:\nsudo pacman -Syu Install all necessary packages:\nsudo pacman -S \\ git python python-pip python-virtualenv \\ mariadb valkey \\ nodejs npm yarn \\ imagemagick wkhtmltopdf \\ cronie \\ base-devel gcc cmake make sudo systemctl enable --now cronie 🗄️ 2. Configure MariaDB Install MariaDB (if not already installed):\nsudo pacman -S mariadb Initialize the database files:\n",
+      "description" : "Complete guide for installing Frappe Bench on Arch Linux with MariaDB and Valkey",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -34,10 +34,10 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2025",
-      "datePublished": "2025-11-19 07:53:10 \u002b0000 UTC",
-      "dateModified" : "2025-11-19 07:53:10 \u002b0000 UTC",
-      "url" : "https:\/\/blog.inxeoz.com\/posts\/frappe\/install_frappe\/",
-      "keywords" : [  ]
+      "datePublished": "2025-12-20 01:07:08 \u002b0530 IST",
+      "dateModified" : "2025-12-20 01:07:08 \u002b0530 IST",
+      "url" : "http:\/\/localhost:1313\/posts\/frappe\/install_frappe\/",
+      "keywords" : [ "frappe","arch-linux","installation","bench", ]
   }
 </script>
 <title>How to Install Frappe Bench on Arch Linux</title>
@@ -45,19 +45,11 @@
   <meta property="og:type" content="article" />
   <meta
     property="og:description"
-    content="How to Install Frappe Bench on Arch Linux 📦 1. Install System Dependencies Begin with a full system update:
-sudo pacman -Syu Install all necessary packages:
-sudo pacman -S \ git python python-pip python-virtualenv \ mariadb valkey \ nodejs npm yarn \ imagemagick wkhtmltopdf \ cronie \ base-devel gcc cmake make sudo systemctl enable --now cronie 🗄️ 2. Configure MariaDB Install MariaDB (if not already installed):
-sudo pacman -S mariadb Initialize the database files:
-"
+    content="Complete guide for installing Frappe Bench on Arch Linux with MariaDB and Valkey"
   />
   <meta
     name="description"
-    content="How to Install Frappe Bench on Arch Linux 📦 1. Install System Dependencies Begin with a full system update:
-sudo pacman -Syu Install all necessary packages:
-sudo pacman -S \ git python python-pip python-virtualenv \ mariadb valkey \ nodejs npm yarn \ imagemagick wkhtmltopdf \ cronie \ base-devel gcc cmake make sudo systemctl enable --now cronie 🗄️ 2. Configure MariaDB Install MariaDB (if not already installed):
-sudo pacman -S mariadb Initialize the database files:
-"
+    content="Complete guide for installing Frappe Bench on Arch Linux with MariaDB and Valkey"
   />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
   
@@ -211,8 +203,8 @@ sudo pacman -S mariadb Initialize the database files:
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2025-11-19 07:53:10 UTC">
-                19 Nov 2025
+              <time class="post-date" datetime="2025-12-20 01:07:08 IST">
+                20 Dec 2025
               </time>
               
             </div>
@@ -231,12 +223,12 @@ sudo pacman -S mariadb Initialize the database files:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -Syu
 </span></span></code></pre></div><p>Install all necessary packages:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    git python python-pip python-virtualenv <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    mariadb valkey <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    nodejs npm yarn <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    imagemagick wkhtmltopdf <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    cronie <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    base-devel gcc cmake make
+</span></span></span><span style="display:flex;"><span>    git python python-pip python-virtualenv <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    mariadb valkey <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    nodejs npm yarn <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    imagemagick wkhtmltopdf <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    cronie <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    base-devel gcc cmake make
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable --now cronie
 </span></span></code></pre></div><hr>
 <h1 id="-2-configure-mariadb">🗄️ 2. Configure MariaDB</h1>
@@ -314,6 +306,30 @@ LISTEN 0      511                 [::1]:6379          [::]:*    users:((&ldquo;v
         <div class="row middle-xs">
           <div class="col-xs-12">
             
+            <div class="post-tags">
+              <a href="/tags/frappe/">
+                frappe
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/arch-linux/">
+                arch-linux
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/installation/">
+                installation
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/bench/">
+                bench
+              </a>
+            </div>
+            
           </div>
         </div>
         
@@ -324,6 +340,19 @@ LISTEN 0      511                 [::1]:6379          [::]:*    users:((&ldquo;v
           </div>
 
           
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/docker/docker_frappe/">Docker Frappe</a></li>
+    
+    <li><a href="/posts/database/fix_redis_in_common_site/">Fix Redis In Common Site</a></li>
+    
+    <li><a href="/posts/frappe/how_to_restore/">How To Restore</a></li>
+    
+  </ul>
+</div>
 
 
 

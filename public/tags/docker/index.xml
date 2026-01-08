@@ -2,52 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on blog and posts from inxeoz</title>
-    <link>https://blog.inxeoz.com/tags/docker/</link>
+    <link>http://localhost:1313/tags/docker/</link>
     <description>Recent content in Docker on blog and posts from inxeoz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Nov 2025 16:01:16 +0000</lastBuildDate>
-    <atom:link href="https://blog.inxeoz.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 10:39:34 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CI/CD for Frappe Bench using Jenkins</title>
+      <link>http://localhost:1313/posts/frappe/cicd/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/cicd/</guid>
+      <description>&lt;h1 id=&#34;cicd-for-frappe-bench-using-jenkins-offline--air-gapped-setup&#34;&gt;CI/CD for Frappe Bench using Jenkins (Offline / Air-Gapped Setup)&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This guide explains how to implement &lt;strong&gt;safe CI/CD with rollback&lt;/strong&gt; for a &lt;strong&gt;Frappe Bench&lt;/strong&gt; application using &lt;strong&gt;Docker&lt;/strong&gt; and &lt;strong&gt;Jenkins&lt;/strong&gt;, when the &lt;strong&gt;production server has NO internet access&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This approach is widely used in &lt;strong&gt;banks, government infra, and enterprise ERP deployments&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-problem-statement&#34;&gt;1. Problem Statement&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Frappe Bench applications require &lt;strong&gt;schema migrations&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Docker images must be deployed &lt;strong&gt;without pulling from internet&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Rollback must restore &lt;strong&gt;both code and database&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Deployment must be &lt;strong&gt;repeatable, auditable, and safe&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-high-level-architecture&#34;&gt;2. High-Level Architecture&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/1%2AjQFTm3-Aq2AjBWowunoCAA.jpeg&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deploying ERPNext Frappe with Docker in Offline Air-Gapped Environment</title>
+      <link>http://localhost:1313/posts/frappe/full_article_deploy/</link>
+      <pubDate>Tue, 06 Jan 2026 18:02:25 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/full_article_deploy/</guid>
+      <description>&lt;h1 id=&#34;-deploying-erpnext-frappe-with-docker-in-an-offline--air-gapped-environment&#34;&gt;🚀 Deploying ERPNext (Frappe) with Docker in an Offline / Air-Gapped Environment&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;From Local Setup to Server Deployment (Complete Guide)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-why-this-guide-exists&#34;&gt;1. Why This Guide Exists&lt;/h2&gt;&#xA;&lt;p&gt;In many enterprise environments:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Internet access is &lt;strong&gt;restricted or completely blocked&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servers are accessible &lt;strong&gt;only via SSH&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Docker images must be &lt;strong&gt;pre-approved&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Production servers &lt;strong&gt;cannot pull images from Docker Hub&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide shows how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build an &lt;strong&gt;offline Docker image bundle (&lt;code&gt;.tar&lt;/code&gt;)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Transfer it to a &lt;strong&gt;remote server&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Load and run &lt;strong&gt;ERPNext (Frappe) fully offline&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Operate &lt;strong&gt;backend, database, and workers safely&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Fix common real-world issues (ports, frontend crashes, networking)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everything here is &lt;strong&gt;battle-tested&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Verifying Offline Frappe ERPNext and Fixing Frontend Issues</title>
+      <link>http://localhost:1313/posts/frappe/verify_created_site/</link>
+      <pubDate>Tue, 06 Jan 2026 17:39:13 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/verify_created_site/</guid>
+      <description>&lt;h1 id=&#34;-verifying-offline-frappeerpnext-is-working-and-fixing-frontend-issues&#34;&gt;🟢 Verifying Offline Frappe/ERPNext Is Working (and Fixing Frontend Issues)&lt;/h1&gt;&#xA;&lt;p&gt;After loading Docker images from a &lt;code&gt;.tar&lt;/code&gt; file and starting services with Docker Compose &lt;strong&gt;without internet&lt;/strong&gt;, the final and most common hurdle is getting the &lt;strong&gt;frontend (nginx)&lt;/strong&gt; container running correctly.&lt;/p&gt;&#xA;&lt;p&gt;This section explains how to &lt;strong&gt;diagnose, fix, and verify&lt;/strong&gt; a successful offline setup.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-expected-healthy-state&#34;&gt;✅ Expected Healthy State&lt;/h2&gt;&#xA;&lt;p&gt;Run:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker compose -f pwd.yml ps&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A healthy system looks like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;backend        Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db             Up (healthy)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;redis-cache    Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;redis-queue    Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;queue-short    Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;queue-long     Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scheduler      Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;websocket      Up&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;frontend       Up (port exposed)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Running Frappe ERPNext Docker Deployments Fully Offline</title>
+      <link>http://localhost:1313/posts/frappe/frappe_images_tar/</link>
+      <pubDate>Tue, 06 Jan 2026 17:25:35 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/frappe_images_tar/</guid>
+      <description>&lt;h1 id=&#34;running-frappe--erpnext-docker-deployments-fully-offline&#34;&gt;Running Frappe / ERPNext Docker Deployments Fully Offline&lt;/h1&gt;&#xA;&lt;h2 id=&#34;building-exporting-loading-and-serving-docker-images-without-internet&#34;&gt;Building, Exporting, Loading, and Serving Docker Images Without Internet&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-purpose-of-this-guide&#34;&gt;1. Purpose of This Guide&lt;/h2&gt;&#xA;&lt;p&gt;This article explains &lt;strong&gt;how to deploy Docker applications in an offline / air-gapped environment&lt;/strong&gt;, using &lt;strong&gt;Frappe / ERPNext&lt;/strong&gt; as a real example.&lt;/p&gt;&#xA;&lt;p&gt;We specifically base this workflow on the official repository:&lt;/p&gt;&#xA;&lt;p&gt;👉 &lt;strong&gt;&lt;a href=&#34;https://github.com/frappe/frappe_docker&#34;&gt;https://github.com/frappe/frappe_docker&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The same approach applies to &lt;strong&gt;any Docker Compose–based system&lt;/strong&gt;, not just Frappe.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-why-offline-docker-deployment-is-hard&#34;&gt;2. Why Offline Docker Deployment Is Hard&lt;/h2&gt;&#xA;&lt;p&gt;Docker is designed for &lt;strong&gt;online registries&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Docker Container</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker-container/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker-container/</guid>
+      <link>http://localhost:1313/posts/docker/docker-container/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker-container/</guid>
       <description>&lt;h1 id=&#34;managing-docker-containers-like-a-pro&#34;&gt;Managing Docker Containers Like a Pro&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-what-is-a-docker-container&#34;&gt;⚙️ 1. What is a Docker Container?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;container&lt;/strong&gt; is a running instance of a &lt;strong&gt;Docker image&lt;/strong&gt; — a lightweight, isolated environment that can hold your software, tools, and files.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Image&lt;/strong&gt; = the blueprint (a frozen snapshot, like an OS or preconfigured setup)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt; = the living instance of that image&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When you stop or delete a container, your data and changes can vanish — unless you know how to make them persistent.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Frappe</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker_frappe/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker_frappe/</guid>
+      <link>http://localhost:1313/posts/docker/docker_frappe/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_frappe/</guid>
       <description>&lt;h1 id=&#34;fixing-common-frappe-docker-errors-backing-up-and-restoring-databases&#34;&gt;Fixing Common Frappe Docker Errors, Backing Up, and Restoring Databases&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-introduction&#34;&gt;🧠 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Running &lt;strong&gt;Frappe&lt;/strong&gt; or &lt;strong&gt;ERPNext&lt;/strong&gt; in Docker simplifies deployment, but real-world use often brings challenges — like missing CSS, password mismatches, and restoring backups correctly.&lt;/p&gt;&#xA;&lt;p&gt;This guide explains how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Back up your &lt;strong&gt;database and site files&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Restore a full Frappe instance on a fresh Docker setup&lt;/li&gt;&#xA;&lt;li&gt;Fix &lt;strong&gt;common Frappe Docker errors&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Solve the notorious &lt;strong&gt;“CSS not loading”&lt;/strong&gt; issue after restore&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Tested on &lt;strong&gt;Arch Linux (Manjaro i3)&lt;/strong&gt; using &lt;strong&gt;Frappe/ERPNext v15&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Network</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker_network/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker_network/</guid>
+      <link>http://localhost:1313/posts/docker/docker_network/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_network/</guid>
       <description>&lt;h1 id=&#34;how-to-create-and-manage-docker-networks&#34;&gt;How to Create and Manage Docker Networks&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-is-a-docker-network&#34;&gt;🔹 What Is a Docker Network?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Docker network&lt;/strong&gt; is a virtual layer that connects containers. By default, Docker provides some basic network types:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Network Type&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;bridge&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Default network for standalone containers. Containers can talk to each other by name on the same bridge.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;host&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Shares the host machine’s network directly (no isolation).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;none&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Disables networking for the container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;overlay&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Enables communication between containers across multiple Docker hosts (used in Swarm mode).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;macvlan&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Assigns a MAC address to containers, making them appear as physical devices on your LAN.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-1-check-existing-docker-networks&#34;&gt;⚙️ Step 1: Check Existing Docker Networks&lt;/h2&gt;&#xA;&lt;p&gt;Before creating one, you can see what’s already available:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker Self</title>
-      <link>https://blog.inxeoz.com/posts/docker/docker_self/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/docker_self/</guid>
+      <link>http://localhost:1313/posts/docker/docker_self/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/docker_self/</guid>
       <description>&lt;h1 id=&#34;mastering-docker-building-managing-and-maintaining-your-own-systems&#34;&gt;Mastering Docker: Building, Managing, and Maintaining Your Own Systems&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-1-understanding-docker-basics&#34;&gt;🚀 1. Understanding Docker Basics&lt;/h2&gt;&#xA;&lt;p&gt;Before diving into management, let’s recap what Docker is built around:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Concept&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A read-only template (like an OS snapshot).&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;A running instance of an image — like a lightweight VM.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Volume&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Persistent storage shared between host and container.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Network&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Virtual bridges for communication between containers.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-2-creating-your-own-system-container&#34;&gt;🧩 2. Creating Your Own System (Container)&lt;/h2&gt;&#xA;&lt;p&gt;To start an Ubuntu-based system:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setup Frappe Containers</title>
-      <link>https://blog.inxeoz.com/posts/docker/setup_frappe_containers/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/docker/setup_frappe_containers/</guid>
+      <link>http://localhost:1313/posts/docker/setup_frappe_containers/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/docker/setup_frappe_containers/</guid>
       <description>&lt;p&gt;docker run -d&#xA;&amp;ndash;name mariadb&#xA;&amp;ndash;network frappe-net&#xA;-e MYSQL_ROOT_PASSWORD=frappe&#xA;-e MYSQL_USER=frappe&#xA;-e MYSQL_PASSWORD=frappe&#xA;-e MYSQL_DATABASE=frappe&#xA;-v mariadb_data:/var/lib/mysql&#xA;-p 3307:3306&#xA;mariadb:10.6&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-cache &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 13000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-queue &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 11000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;&#xA;&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name redis-socketio &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-p 12000:6379 &lt;br&gt;&#xA;redis:6.2&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Start Mariadb</title>
-      <link>https://blog.inxeoz.com/posts/database/start_mariadb/</link>
-      <pubDate>Thu, 20 Nov 2025 16:01:16 +0000</pubDate>
-      <guid>https://blog.inxeoz.com/posts/database/start_mariadb/</guid>
+      <title>Start MariaDB</title>
+      <link>http://localhost:1313/posts/database/start_mariadb/</link>
+      <pubDate>Sat, 20 Dec 2025 01:07:08 +0530</pubDate>
+      <guid>http://localhost:1313/posts/database/start_mariadb/</guid>
       <description>&lt;p&gt;docker run -d &lt;br&gt;&#xA;&amp;ndash;name mariadb &lt;br&gt;&#xA;&amp;ndash;network frappe-net &lt;br&gt;&#xA;-e MYSQL_ROOT_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_USER=frappe &lt;br&gt;&#xA;-e MYSQL_PASSWORD=frappe &lt;br&gt;&#xA;-e MYSQL_DATABASE=frappe &lt;br&gt;&#xA;-v mariadb_data:/var/lib/mysql &lt;br&gt;&#xA;-p 3307:3306 &lt;br&gt;&#xA;mariadb:10.6&lt;/p&gt;</description>
     </item>
   </channel>

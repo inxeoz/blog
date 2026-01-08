@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on blog and posts from inxeoz</title>
+    <link>http://localhost:1313/tags/jenkins/</link>
+    <description>Recent content in Jenkins on blog and posts from inxeoz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Jan 2026 10:39:34 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CI/CD for Frappe Bench using Jenkins</title>
+      <link>http://localhost:1313/posts/frappe/cicd/</link>
+      <pubDate>Wed, 07 Jan 2026 10:39:34 +0530</pubDate>
+      <guid>http://localhost:1313/posts/frappe/cicd/</guid>
+      <description>&lt;h1 id=&#34;cicd-for-frappe-bench-using-jenkins-offline--air-gapped-setup&#34;&gt;CI/CD for Frappe Bench using Jenkins (Offline / Air-Gapped Setup)&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This guide explains how to implement &lt;strong&gt;safe CI/CD with rollback&lt;/strong&gt; for a &lt;strong&gt;Frappe Bench&lt;/strong&gt; application using &lt;strong&gt;Docker&lt;/strong&gt; and &lt;strong&gt;Jenkins&lt;/strong&gt;, when the &lt;strong&gt;production server has NO internet access&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This approach is widely used in &lt;strong&gt;banks, government infra, and enterprise ERP deployments&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-problem-statement&#34;&gt;1. Problem Statement&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Frappe Bench applications require &lt;strong&gt;schema migrations&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Docker images must be deployed &lt;strong&gt;without pulling from internet&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Rollback must restore &lt;strong&gt;both code and database&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Deployment must be &lt;strong&gt;repeatable, auditable, and safe&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-high-level-architecture&#34;&gt;2. High-Level Architecture&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/1%2AjQFTm3-Aq2AjBWowunoCAA.jpeg&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

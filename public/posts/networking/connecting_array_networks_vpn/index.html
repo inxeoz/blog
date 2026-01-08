@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.154.2">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="http://localhost:1313/posts/networking/connecting_array_networks_vpn/" />
+  <link rel="canonical" href="http://localhost:1313/posts/networking/connecting_array_networks_vpn/" /><link
+    rel="alternate"
+    type="application/atom+xml"
+    href="http://localhost:1313/index.xml"
+    title="blog and posts from inxeoz"
+  />
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http:\/\/localhost:1313\/"
+      },
+      "articleSection" : "posts",
+      "name" : "Connecting to Array Networks VPN from Linux",
+      "headline" : "Connecting to Array Networks VPN from Linux",
+      "description" : "Policy-compliant method to access Array Networks SSL VPN from Linux using Android MotionPro and SOCKS proxy",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2026",
+      "datePublished": "2026-01-08 23:06:25 \u002b0530 IST",
+      "dateModified" : "2026-01-08 23:06:25 \u002b0530 IST",
+      "url" : "http:\/\/localhost:1313\/posts\/networking\/connecting_array_networks_vpn\/",
+      "keywords" : [ "vpn","array-networks","linux","android","socks-proxy", ]
+  }
+</script>
+<title>Connecting to Array Networks VPN from Linux</title>
+  <meta property="og:title" content="Connecting to Array Networks VPN from Linux" />
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:description"
+    content="Policy-compliant method to access Array Networks SSL VPN from Linux using Android MotionPro and SOCKS proxy"
+  />
+  <meta
+    name="description"
+    content="Policy-compliant method to access Array Networks SSL VPN from Linux using Android MotionPro and SOCKS proxy"
+  />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
+  
+  
+  <style>:root{--bg-color:#ffffff;--text-color:#000000;--link-color:#000000;--border-color:#482936;--secondary-text:#666666;--code-bg:#f6f8fa;--blockquote-color:#57606a;--blockquote-border:#d0d7de;--disqus-bg:white}[data-theme=dark]{--bg-color:#1a1a1a;--text-color:#e0e0e0;--link-color:#b0b0b0;--border-color:#8b5a7a;--secondary-text:#aaaaaa;--code-bg:#2d2d2d;--blockquote-color:#a0a0a0;--blockquote-border:#404040;--disqus-bg:#1a1a1a}body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px;background-color:var(--bg-color);color:var(--text-color)}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:var(--link-color);text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:var(--link-color)}.markdown-body blockquote{margin:0;padding:0 1em;color:var(--blockquote-color);border-left:.25em solid var(--blockquote-border)}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px;background-color:var(--code-bg)}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:var(--code-bg);border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:var(--code-bg);border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:var(--secondary-text)}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:var(--border-color);border-style:solid none none none}.lang-switch{font-weight:600}.theme-toggle{background:0 0;border:none;color:var(--link-color);cursor:pointer;font-weight:600;font-size:inherit;padding:0}.theme-toggle:hover{font-weight:800}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:var(--text-color)2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:var(--text-color)2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:6px}.post-content .post-gallery{display:flex;flex-wrap:wrap;gap:6px}.post-content .post-gallery img{margin-right:auto;margin-top:auto;width:calc(50% - 3px)}.related-content{border-width:3px;border-style:solid;border-color:var(--text-color);padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:var(--disqus-bg)}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}.post-content .post-gallery img{width:100%}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+  
+  
+  <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="blog and posts from inxeoz">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade"
+    rel="stylesheet"
+  />
+  
+  
+
+  
+  <script data-cfasync="false">
+    (function() {
+      const themeKey = 'theme';
+      const themes = { light: 'light', dark: 'dark', system: 'system' };
+
+      function getSystemTheme() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      function getStoredTheme() {
+        return localStorage.getItem(themeKey);
+      }
+      function getCurrentTheme() {
+        const stored = getStoredTheme();
+        if (stored && stored !== themes.system) {
+          return stored;
+        }
+        return getSystemTheme();
+      }
+      function setTheme(theme) {
+        const root = document.documentElement;
+        if (theme === themes.system) {
+          theme = getSystemTheme();
+        }
+        if (theme === themes.dark) {
+          root.setAttribute('data-theme', 'dark');
+        } else {
+          root.removeAttribute('data-theme');
+        }
+        updateToggleButton(theme);
+      }
+      function updateToggleButton(theme) {
+        const button = document.getElementById('theme-toggle');
+        if (button) {
+          button.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+      }
+      function ensureButtonUpdated() {
+        updateToggleButton(getCurrentTheme());
+      }
+      function initTheme() {
+        const stored = getStoredTheme();
+        let theme;
+        if (stored) {
+          theme = stored === themes.system ? getSystemTheme() : stored;
+          setTheme(stored);
+        } else {
+          
+          theme = getSystemTheme();
+          setTheme(themes.system);
+        }
+      }
+      function toggleTheme() { 
+        const current = getStoredTheme() || themes.system;
+        let next;
+        if (current === themes.system) {
+          next = getSystemTheme() === 'dark' ? themes.light : themes.dark;
+        } else if (current === themes.dark) {
+          next = themes.light;
+        } else {
+          next = themes.dark;
+        }
+        localStorage.setItem(themeKey, next);
+        setTheme(next);
+      }
+
+      
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        const stored = getStoredTheme();
+        if (!stored || stored === themes.system) {
+          setTheme(themes.system);
+        }
+      });
+
+      
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', ensureButtonUpdated);
+      } else {
+        
+        ensureButtonUpdated();
+      }
+
+      
+      window.toggleTheme = toggleTheme;
+
+      
+      initTheme();
+    })();
+  </script>
+  
+  
+</head>
+
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="header-title">
+    <a href="/"
+      >Inxeoz</a
+    >
+  </div>
+  <div class="header-subtitle"></div>
+</header>
+<div class="row end-md header-items">
+  
+  <div class="header-item">
+    <a href="https://inxeoz.com" target="_blank">About Me</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="https://github.com/inxeoz" target="_blank">GitHub</a>
+  </div>
+  
+  <div class="header-item">
+    <button id="theme-toggle" onclick="toggleTheme()" class="theme-toggle">🌙</button>
+  </div>
+</div>
+<div class="row">
+   
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Connecting to Array Networks VPN from Linux</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2026-01-08 23:06:25 IST">
+                08 Jan 2026
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h1 id="connecting-to-an-array-networks-vpn-from-linux-using-motionpro-android--termux--socks-proxy">Connecting to an Array Networks VPN from Linux using MotionPro (Android) + Termux + SOCKS Proxy</h1>
+<h2 id="abstract">Abstract</h2>
+<p>Array Networks SSL VPN deployments often enforce <strong>MotionPro device identification (machineid / hardware ID)</strong>, which blocks Linux and third-party VPN clients such as OpenConnect.
+However, many organizations <strong>allow mobile VPN access</strong> via the official <strong>MotionPro Android application</strong>.</p>
+<p>This article documents a <strong>fully working, policy-compliant method</strong> to access internal resources from a Linux host by:</p>
+<ul>
+<li>Using <strong>MotionPro on Android</strong> as the VPN endpoint</li>
+<li>Running <strong>Termux + OpenSSH</strong> on Android</li>
+<li>Exposing a <strong>SOCKS5 proxy</strong> over USB/Wi-Fi tethering</li>
+<li>Tunneling Linux traffic (SSH, curl, browsers, tools) through that proxy</li>
+</ul>
+<p>No reverse engineering, no bypassing device checks, and no modification of the VPN infrastructure is required.</p>
+<hr>
+<h2 id="background-why-linux-clients-fail-with-array-vpn">Background: Why Linux Clients Fail with Array VPN</h2>
+<p>Array Networks SSL VPN gateways commonly enforce:</p>
+<ul>
+<li><strong>MotionPro-only Agent SSL VPN</strong></li>
+<li><strong>Hardware ID / machineid</strong></li>
+<li><strong>LDAP + device binding</strong></li>
+</ul>
+<p>As a result:</p>
+<ul>
+<li>OpenConnect (even with <code>--protocol=array</code>) fails post-authentication</li>
+<li>Linux cannot generate a valid MotionPro hardware ID</li>
+<li>Authentication succeeds, but session creation fails (<code>internal error (11)</code>)</li>
+</ul>
+<p>However, <strong>mobile VPN access</strong> often uses a <em>different device identification model</em> and is allowed.</p>
+<hr>
+<h2 id="high-level-architecture">High-Level Architecture</h2>
+<pre tabindex="0"><code>Linux Host
+   |
+   | (SOCKS5)
+   v
+Android Phone (Termux)
+   |
+   | (MotionPro VPN)
+   v
+Array Networks SSL VPN
+   |
+   v
+Internal Network / Servers
+</code></pre><p>Key idea:</p>
+<ul>
+<li>Android becomes the <strong>trusted VPN endpoint</strong></li>
+<li>Linux connects <strong>through Android</strong>, not directly to the VPN</li>
+</ul>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li>Android phone (Android 10+ recommended)</li>
+<li>Linux machine</li>
+<li>USB cable (USB tethering preferred)</li>
+</ul>
+<h3 id="software">Software</h3>
+<ul>
+<li>MotionPro (Android, from Play Store)</li>
+<li>Termux (Android)</li>
+<li>OpenSSH (Termux)</li>
+<li>Standard Linux tools (<code>ssh</code>, <code>curl</code>, <code>nc</code>)</li>
+</ul>
+<hr>
+<h2 id="step-1-install-and-connect-motionpro-on-android">Step 1: Install and Connect MotionPro on Android</h2>
+<ol>
+<li>Install <strong>MotionPro</strong> from Google Play Store</li>
+<li>Open MotionPro</li>
+<li>Configure your Array VPN server:
+<ul>
+<li>Server: <code>https://&lt;vpn-gateway&gt;</code></li>
+<li>Username / Password / MFA as required</li>
+</ul>
+</li>
+<li>Connect successfully</li>
+</ol>
+<p>✅ At this point, <strong>the phone itself can access internal resources</strong></p>
+<hr>
+<h2 id="step-2-install-termux-and-openssh">Step 2: Install Termux and OpenSSH</h2>
+<ol>
+<li>
+<p>Install <strong>Termux</strong> from Play Store or F-Droid</p>
+</li>
+<li>
+<p>Open Termux</p>
+</li>
+<li>
+<p>Update packages:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pkg update <span style="color:#f92672">&amp;&amp;</span> pkg upgrade
+</span></span></code></pre></div></li>
+<li>
+<p>Install OpenSSH:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pkg install openssh
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="step-3-set-a-termux-password-required">Step 3: Set a Termux Password (Required)</h2>
+<p>Termux SSH requires a password for localhost login:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd
+</span></span></code></pre></div><p>Choose a password (this is local to Termux).</p>
+<hr>
+<h2 id="step-4-start-the-ssh-daemon-important-detail">Step 4: Start the SSH Daemon (Important Detail)</h2>
+<p>⚠️ <strong>Termux cannot bind to port 22</strong> (Android restriction).
+It uses <strong>port 8022</strong>.</p>
+<p>Start SSH daemon explicitly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sshd -p <span style="color:#ae81ff">8022</span>
+</span></span></code></pre></div><p>Verify it’s running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ps aux | grep sshd | grep -v grep
+</span></span></code></pre></div><hr>
+<h2 id="step-5-start-a-socks5-proxy-on-android">Step 5: Start a SOCKS5 Proxy on Android</h2>
+<p>Run <strong>this exact command</strong> in Termux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -p <span style="color:#ae81ff">8022</span> -g -D <span style="color:#ae81ff">1080</span> -N localhost
+</span></span></code></pre></div><h3 id="explanation">Explanation</h3>
+<ul>
+<li><code>-D 1080</code> → create SOCKS5 proxy on port 1080</li>
+<li><code>-g</code> → allow remote connections (critical)</li>
+<li><code>-N</code> → no shell, proxy only</li>
+<li><code>localhost</code> → connects to Termux SSH server</li>
+</ul>
+<p>⚠️ <strong>Leave this process running</strong>
+Do not close Termux.</p>
+<hr>
+<h2 id="step-6-prevent-android-from-killing-the-tunnel">Step 6: Prevent Android from Killing the Tunnel</h2>
+<p>On Android:</p>
+<ol>
+<li>Settings → Apps → <strong>Termux</strong></li>
+<li>Battery:
+<ul>
+<li>Disable battery optimization</li>
+<li>Set to <strong>Unrestricted</strong></li>
+</ul>
+</li>
+<li>Do the same for <strong>MotionPro</strong></li>
+<li>Lock Termux in recent apps (optional but recommended)</li>
+</ol>
+<p>This is critical for stability.</p>
+<hr>
+<h2 id="step-7-enable-usb-tethering-recommended">Step 7: Enable USB Tethering (Recommended)</h2>
+<ol>
+<li>Connect Android phone to Linux via USB</li>
+<li>Enable <strong>USB tethering</strong> on Android</li>
+<li>On Linux, verify network:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip route
+</span></span></code></pre></div><p>Example:</p>
+<pre tabindex="0"><code>default via 10.78.118.223 dev enp0s20f0u2
+</code></pre><p>Here:</p>
+<ul>
+<li><code>10.78.118.223</code> = Android phone IP</li>
+<li><code>enp0s20f0u2</code> = USB tether interface</li>
+</ul>
+<hr>
+<h2 id="step-8-configure-socks-proxy-on-linux">Step 8: Configure SOCKS Proxy on Linux</h2>
+<p>Set proxy environment variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export ALL_PROXY<span style="color:#f92672">=</span>socks5://10.78.118.223:1080
+</span></span><span style="display:flex;"><span>export all_proxy<span style="color:#f92672">=</span>socks5h://10.78.118.223:1080
+</span></span></code></pre></div><p>(<code>socks5h</code> ensures DNS is resolved through the proxy)</p>
+<hr>
+<h2 id="step-9-verify-the-proxy-works">Step 9: Verify the Proxy Works</h2>
+<p>Test with a public endpoint:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -v https://ifconfig.me
+</span></span></code></pre></div><p>Expected behavior:</p>
+<ul>
+<li>Connection succeeds</li>
+<li>Output shows an IP (often mobile or corporate)</li>
+</ul>
+<p>This confirms:</p>
+<ul>
+<li>SOCKS proxy is reachable</li>
+<li>Android → VPN path works</li>
+</ul>
+<hr>
+<h2 id="important-networking-note-docker-conflict">Important Networking Note (Docker Conflict)</h2>
+<p>Many Linux systems have Docker networks like:</p>
+<pre tabindex="0"><code>172.18.0.0/16 dev docker0
+</code></pre><p>If your <strong>internal network also uses 172.18.x.x</strong>, then:</p>
+<ul>
+<li>Direct routing will <strong>never work</strong></li>
+<li><code>ping</code> and raw <code>ssh</code> will fail</li>
+<li><strong>SOCKS proxy is mandatory</strong></li>
+</ul>
+<p>This is normal and expected.</p>
+<hr>
+<h2 id="step-10-ssh-to-internal-hosts-correct-way">Step 10: SSH to Internal Hosts (Correct Way)</h2>
+<p>SSH <strong>ignores proxy environment variables</strong>.
+You must explicitly configure it.</p>
+<h3 id="one-off-ssh-command">One-off SSH command</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -o ProxyCommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nc -x 10.78.118.223:1080 %h %p&#34;</span> root@172.18.210.49
+</span></span></code></pre></div><p>On first connect, accept the host key.</p>
+<p>If credentials are correct, you’ll land on:</p>
+<pre tabindex="0"><code>[root@internal-host ~]#
+</code></pre><p>🎉 You are inside the internal network.</p>
+<hr>
+<h2 id="step-11-permanent-ssh-configuration-recommended">Step 11: Permanent SSH Configuration (Recommended)</h2>
+<p>Edit SSH config:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano ~/.ssh/config
+</span></span></code></pre></div><p>Add:</p>
+<pre tabindex="0"><code class="language-sshconfig" data-lang="sshconfig">Host corp-rhv
+  HostName 172.18.210.49
+  User root
+  ProxyCommand nc -x 10.78.118.223:1080 %h %p
+</code></pre><p>Now simply run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh corp-rhv
+</span></span></code></pre></div><hr>
+<h2 id="what-works-through-this-setup">What Works Through This Setup</h2>
+<p>✅ SSH
+✅ curl / wget
+✅ Browsers (Firefox SOCKS proxy)
+✅ Git / npm / pip (with proxy config)
+✅ Databases and internal APIs
+✅ ERP / internal dashboards</p>
+<hr>
+<h2 id="what-does-not-work-by-design">What Does NOT Work (By Design)</h2>
+<p>❌ <code>ping</code>
+❌ Raw routing
+❌ Linux VPN clients (OpenConnect, etc.)
+❌ Sharing Android VPN without proxy
+❌ Reusing MotionPro hardware IDs</p>
+<hr>
+<h2 id="why-this-method-is-safe-and-compliant">Why This Method Is Safe and Compliant</h2>
+<ul>
+<li>Uses <strong>official MotionPro client</strong></li>
+<li>Uses <strong>allowed mobile VPN access</strong></li>
+<li>No manipulation of VPN traffic</li>
+<li>No spoofing device identity</li>
+<li>No policy bypass</li>
+</ul>
+<p>This is equivalent to:</p>
+<blockquote>
+<p>“Accessing internal resources from a mobile device, then forwarding traffic.”</p>
+</blockquote>
+<hr>
+<h2 id="stability-tips">Stability Tips</h2>
+<ul>
+<li>Keep Termux open</li>
+<li>Keep MotionPro connected</li>
+<li>Disable Android battery optimization</li>
+<li>Prefer USB tethering over Wi-Fi</li>
+<li>Optionally use <code>tmux</code> in Termux</li>
+</ul>
+<hr>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/vpn/">
+                vpn
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/array-networks/">
+                array-networks
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/linux/">
+                linux
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/android/">
+                android
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/socks-proxy/">
+                socks-proxy
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/networking/wilddomain/">How to Safely Set Up Wildcard Domain Resolution on Linux</a></li>
+    
+    <li><a href="/posts/react-native/react-native/">React Native</a></li>
+    
+  </ul>
+</div>
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
+
+        <div class="site-footer">
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  
+<script>
+  
+  (function() {
+    const themeKey = 'theme';
+    const themes = { light: 'light', dark: 'dark', system: 'system' };
+
+    function getSystemTheme() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function getStoredTheme() {
+      return localStorage.getItem(themeKey);
+    }
+
+    function setTheme(theme) {
+      const root = document.documentElement;
+      if (theme === themes.system) {
+        theme = getSystemTheme();
+      }
+      if (theme === themes.dark) {
+        root.setAttribute('data-theme', 'dark');
+      } else {
+        root.removeAttribute('data-theme');
+      }
+      updateToggleButton(theme);
+    }
+
+    function updateToggleButton(theme) {
+      const button = document.getElementById('theme-toggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️' : '🌙';
+      }
+    }
+
+    function initTheme() {
+      const stored = getStoredTheme();
+      let theme;
+      if (stored) {
+        theme = stored === themes.system ? getSystemTheme() : stored;
+        setTheme(stored);
+      } else {
+        
+        theme = getSystemTheme();
+        setTheme(themes.system);
+      }
+    }
+
+    function toggleTheme() {
+      const current = getStoredTheme() || themes.system;
+      let next;
+      if (current === themes.system) {
+        next = getSystemTheme() === 'dark' ? themes.light : themes.dark;
+      } else if (current === themes.dark) {
+        next = themes.light;
+      } else {
+        next = themes.dark;
+      }
+      localStorage.setItem(themeKey, next);
+      setTheme(next);
+    }
+
+    
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+      const stored = getStoredTheme();
+      if (!stored || stored === themes.system) {
+        setTheme(themes.system);
+      }
+    });
+
+    
+    window.toggleTheme = toggleTheme;
+
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTheme);
+    } else {
+      initTheme();
+    }
+  })();
+</script>
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const disqus = document.getElementById('disqus_thread');
+    if (!disqus) {
+      return;
+    }
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        const iframes = disqus.getElementsByTagName('iframe');
+        if (iframes.length > 1) {
+          const commentsIframe = iframes[1];
+          while (disqus.firstChild) {
+            disqus.removeChild(disqus.firstChild);
+          }
+          disqus.appendChild(commentsIframe);
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(disqus, { childList: true, subtree: true });
+  });
+</script>
+
+  
+
+</body>
+
+</html>
